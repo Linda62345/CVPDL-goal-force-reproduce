@@ -1,3 +1,11 @@
+> **📌 This is a reproduction fork (CVPDL project).**
+> Reproduced Goal Force inference on a single RTX 5090 (32GB) and ran a small pilot study.
+> - Setup notes & code changes: [`REPRODUCE.md`](REPRODUCE.md)
+> - Pilot report (中文): [`reports/pilot_report_2026-11-24.md`](reports/pilot_report_2026-11-24.md)
+> - Generated videos: [`annotations/videos/`](annotations/videos/) · Annotation sheet: [`annotations/`](annotations/)
+>
+> Original repository: [brown-palm/goal-force](https://github.com/brown-palm/goal-force). Everything below is the original README.
+
 <div align="center">
 
 # Goal Force: Teaching Video Models To Accomplish Physics-Conditioned Goals
