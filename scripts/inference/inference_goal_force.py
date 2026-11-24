@@ -20,6 +20,7 @@ import numpy as np
 from src.goal_force.utils import safe_collate, add_aesthetic_point_force_prompt_to_video
 import argparse
 import json
+import time
 
 from scripts.inference.utils import split_list_across_devices_contiguous
 
@@ -52,6 +53,11 @@ def parse_args():
                         help='Path to the model checkpoint file')
     parser.add_argument('--example_paths', type=str, nargs='+', required=True,
                         help='Path(s) to example file(s). For goal_force: CSV file(s). For canny_edge: video file(s).')
+    # [reproduce] extra options: several seeds with one model load, and a custom output dir
+    parser.add_argument('--seeds', type=int, nargs='+', default=None,
+                        help='List of seeds; model is loaded once and every csv is run for every seed (overrides --seed)')
+    parser.add_argument('--output_dir', type=str, default=None,
+                        help='Where to write videos (default: <ckpt_dir>/step-<N>-videos)')
                         
     return parser.parse_args()
 
@@ -74,7 +80,9 @@ def main(args):
 
     ckpt_dir_controlnet = os.path.dirname(args.model_ckpt_path)
     step_num = os.path.basename(args.model_ckpt_path).split(".safetensors")[0].split("-")[-1]
-    step_dir = os.path.join(ckpt_dir_controlnet, f"step-{step_num}-videos")
+    step_dir = args.output_dir or os.path.join(ckpt_dir_controlnet, f"step-{step_num}-videos")
+    timing_log = os.path.join(step_dir, "timings.jsonl")
+    t_load_start = time.time()
     os.makedirs(step_dir, exist_ok=True)
 
     if not SKIP_MODEL_LOADING_FOR_DEBUGGING_DATA:
@@ -108,7 +116,13 @@ def main(args):
         pipe.load_controlnet_weights(
             pipe.controlnet, args.model_ckpt_path, torch_dtype=TORCH_DTYPE)
 
-        pipe.enable_vram_management()
+        # [reproduce] allow capping resident weights on smaller GPUs (e.g. 32GB RTX 5090); unset = original behavior
+        vram_limit_gb = os.environ.get("VRAM_LIMIT_GB")
+        pipe.enable_vram_management(vram_limit=float(vram_limit_gb) if vram_limit_gb else None)
+        load_sec = time.time() - t_load_start
+        print(f"[timing] model load: {load_sec:.1f}s", flush=True)
+        with open(timing_log, "a") as f:
+            f.write(json.dumps({"event": "model_load", "sec": round(load_sec, 1), "time": time.strftime("%Y-%m-%d %H:%M:%S")}) + "\n")
 
     # Split examples across devices
     device_examples = split_list_across_devices_contiguous(args.example_paths, args.world_size, args.device_id)
@@ -116,7 +130,12 @@ def main(args):
 
     assert args.control_signal_type == "goal_force"
 
-    for csv in device_examples:
+    seeds = args.seeds if args.seeds else [args.seed]
+    jobs = [(seed, csv) for seed in seeds for csv in device_examples]
+    for job_idx, (seed, csv) in enumerate(jobs):
+        args.seed = seed
+        print(f"\n[job {job_idx+1}/{len(jobs)}] seed={seed} csv={csv} start={time.strftime('%H:%M:%S')}", flush=True)
+        t_job = time.time()
         print("Doing csv: ", csv)
 
         base_path = os.path.dirname(csv)
@@ -188,6 +207,11 @@ def main(args):
             fname_output_video_with_prompt  = os.path.join(step_dir, f"{fname_str}-with-prompt.mp4")
             fname_text                      = os.path.join(step_dir, f"{fname_str}-text.json")
 
+            # [reproduce] resume support: skip jobs whose final output already exists
+            if os.path.exists(fname_output_video_with_prompt):
+                print(f"[skip] already done: {fname_output_video}", flush=True)
+                continue
+
             # save first frame
             input_image[0].save(fname_image_condition)
             input_image = input_image[0].convert("RGB")
@@ -236,6 +260,12 @@ def main(args):
 
                 video_with_prompt = [dataset.to_pil_transform(frame) for frame in video_with_prompt]
                 save_video(video_with_prompt, fname_output_video_with_prompt, fps=15, quality=5)
+
+                gen_sec = time.time() - t_job
+                print(f"[timing] job {job_idx+1}/{len(jobs)} done in {gen_sec:.1f}s -> {fname_output_video}", flush=True)
+                with open(timing_log, "a") as f:
+                    f.write(json.dumps({"event": "video", "csv": csv, "seed": seed, "sec": round(gen_sec, 1),
+                                        "video": fname_output_video, "time": time.strftime("%Y-%m-%d %H:%M:%S")}) + "\n")
 
 
 if __name__ == "__main__":

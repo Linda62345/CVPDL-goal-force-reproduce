@@ -13,3 +13,11 @@ datasets/OpenVid-1M/OpenVid-1M-cache.pkl
 .env
 .DS_Store
 cat_fightning.mp4
+
+# [reproduce] local env / caches / private originals
+venv/
+.hf_cache/
+datasets/rack/raw/
+logs/*.log
+logs/preview_*
+logs/rack_preview.jpg
