@@ -1,0 +1,36 @@
+{
+  "_note": "Placeholder AI-generated scenes for testing the pipeline before real photos are taken. split: calib = used to tune acceptance thresholds, test = held-out. Do not mix AI images into the final test set.",
+  "common_suffix": "Straight-on front view, camera at the same height as the rail, static tripod shot, centered composition, plain light grey wall background, soft even studio lighting, sharp focus, photorealistic product photography, no people, no hands, no text, no logos.",
+  "scenes": [
+    {
+      "id": "spice",
+      "split": "calib",
+      "prompt": "A single glass spice jar with a wooden lid hangs from a small sliding clip on a long straight horizontal brushed-steel rail mounted on a kitchen wall. The jar is exactly in the middle of the rail. Both ends of the rail have clearly visible round black end-stopper caps, with empty rail space between the jar and each stopper."
+    },
+    {
+      "id": "mug_hook",
+      "split": "calib",
+      "prompt": "A white ceramic mug hangs from an S-hook on a long straight horizontal matte black metal rail under a wooden kitchen shelf. The mug is exactly in the middle of the rail. Both ends of the rail have clearly visible black square end caps, with long empty rail on both sides of the mug."
+    },
+    {
+      "id": "drawer_bin",
+      "split": "test",
+      "prompt": "A small blue plastic storage bin sits on a straight horizontal aluminium sliding track inside an open white shelf compartment. The bin is exactly in the middle of the track. Both ends of the track have clearly visible red stopper blocks, with empty track space on the left and right of the bin."
+    },
+    {
+      "id": "towel",
+      "split": "test",
+      "prompt": "A small rolled grey towel hangs from a sliding ring on a long straight horizontal chrome towel rail mounted on a white tiled bathroom wall. The towel is exactly in the middle of the rail. Both ends of the rail have clearly visible round chrome wall brackets acting as end stops, with empty rail on both sides."
+    },
+    {
+      "id": "plant",
+      "split": "test",
+      "prompt": "A small potted green succulent in a white pot sits on a sliding wooden carriage on a long straight horizontal wooden track on a desk. The pot is exactly in the middle of the track. Both ends of the track have clearly visible raised wooden end blocks, with empty track space on the left and right."
+    },
+    {
+      "id": "speaker",
+      "split": "test",
+      "prompt": "A small round orange bluetooth speaker sits on a sliding mount on a long straight horizontal black aluminium desk rail along the back edge of a white desk. The speaker is exactly in the middle of the rail. Both ends of the rail have clearly visible black end caps, with empty rail on both sides."
+    }
+  ]
+}
