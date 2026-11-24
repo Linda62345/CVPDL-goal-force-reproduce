@@ -21,3 +21,8 @@ datasets/rack/raw/
 logs/*.log
 logs/preview_*
 logs/rack_preview.jpg
+
+# local text-to-image env for test scenes
+imagegen/venv/
+imagegen/hf_cache/
+imagegen/pip_cache/
