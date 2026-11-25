@@ -1,0 +1,203 @@
+[transformers] `memory_attention_rope_theta` is deprecated and will be removed in v5.0. Use `rope_parameters['rope_theta']` instead.
+Loading weights:   0%|          | 0/901 [00:00<?, ?it/s]Loading weights: 100%|██████████| 901/901 [00:00<00:00, 22909.41it/s]
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 19303.86it/s]
+white_ball   vis  81/81  last n/a         area x1.27  R-DINO last 0.85
+red_ball     vis  81/81  last n/a         area x1.08  R-DINO last 0.92
+domino1      vis  81/81  last changed     area x1.03  R-DINO last 0.3
+domino2      vis  49/81  last missing     area x0.00  R-DINO last None
+domino3      vis  51/81  last missing     area x0.00  R-DINO last None
+domino4      vis  49/81  last missing     area x0.00  R-DINO last None
+domino_back  vis  81/81  last as_initial  area x1.05  R-DINO last 0.91
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 21119.26it/s]
+{
+ "n_objects": 7,
+ "state_kept_frac": 0.42857142857142855,
+ "start_iou_mean": 0.9420407325966977,
+ "n_vanished": 0,
+ "n_fused": 4,
+ "n_reverted": 0,
+ "n_exited": 3,
+ "appearance_mem_end_mean": 0.7457084879279137,
+ "appearance_latest_end_mean": 0.7941978424787521,
+ "target_success": true,
+ "failure_labels": [
+  "appearance_deformed",
+  "state_lost"
+ ]
+}
+white_ball     kept=True  lost=False rev=False startIoU=0.98 area_end=1.28 Rmem=0.8534345626831055 Rlat=0.8682922124862671
+red_ball       kept=True  lost=False rev=False startIoU=0.99 area_end=1.11 Rmem=0.9153580069541931 Rlat=0.9292765855789185
+domino1        kept=False lost=True  rev=False startIoU=0.97 area_end=1.14 Rmem=0.29966697096824646 Rlat=0.4369240403175354
+domino2        kept=False lost=True  rev=False startIoU=0.92 area_end=0.00 Rmem=None Rlat=None
+domino3        kept=False lost=True  rev=False startIoU=0.85 area_end=0.00 Rmem=None Rlat=None
+domino4        kept=False lost=True  rev=False startIoU=0.90 area_end=0.00 Rmem=None Rlat=None
+domino_back    kept=True  lost=False rev=False startIoU=0.99 area_end=1.05 Rmem=0.9143744111061096 Rlat=0.9422985315322876
+[transformers] `memory_attention_rope_theta` is deprecated and will be removed in v5.0. Use `rope_parameters['rope_theta']` instead.
+Loading weights:   0%|          | 0/901 [00:00<?, ?it/s]Loading weights: 100%|██████████| 901/901 [00:00<00:00, 21504.84it/s]
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 23607.52it/s]
+white_ball   vis  81/81  last n/a         area x1.38  R-DINO last 0.92
+red_ball     vis  81/81  last n/a         area x1.06  R-DINO last 0.94
+domino1      vis  81/81  last changed     area x0.44  R-DINO last 0.42
+domino2      vis  38/81  last missing     area x0.00  R-DINO last None
+domino3      vis  41/81  last missing     area x0.00  R-DINO last None
+domino4      vis  33/81  last missing     area x0.00  R-DINO last None
+domino_back  vis  81/81  last as_initial  area x1.00  R-DINO last 0.87
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 20252.25it/s]
+{
+ "n_objects": 7,
+ "state_kept_frac": 0.5714285714285714,
+ "start_iou_mean": 0.9430642321974004,
+ "n_vanished": 0,
+ "n_fused": 3,
+ "n_reverted": 0,
+ "n_exited": 3,
+ "appearance_mem_end_mean": 0.7896913960576057,
+ "appearance_latest_end_mean": 0.8126975521445274,
+ "target_success": true,
+ "failure_labels": [
+  "appearance_deformed",
+  "state_lost"
+ ]
+}
+white_ball     kept=True  lost=False rev=False startIoU=0.98 area_end=1.38 Rmem=0.9224910736083984 Rlat=0.9345546364784241
+red_ball       kept=True  lost=False rev=False startIoU=0.98 area_end=1.10 Rmem=0.943777322769165 Rlat=0.9404135346412659
+domino1        kept=True  lost=False rev=False startIoU=0.97 area_end=0.49 Rmem=0.42383232712745667 Rlat=0.452136367559433
+domino2        kept=False lost=True  rev=False startIoU=0.93 area_end=0.00 Rmem=None Rlat=None
+domino3        kept=False lost=True  rev=False startIoU=0.87 area_end=0.00 Rmem=None Rlat=None
+domino4        kept=False lost=True  rev=False startIoU=0.89 area_end=0.00 Rmem=None Rlat=None
+domino_back    kept=True  lost=False rev=False startIoU=0.99 area_end=1.00 Rmem=0.8686648607254028 Rlat=0.9236856698989868
+[transformers] `memory_attention_rope_theta` is deprecated and will be removed in v5.0. Use `rope_parameters['rope_theta']` instead.
+Loading weights:   0%|          | 0/901 [00:00<?, ?it/s]Loading weights: 100%|██████████| 901/901 [00:00<00:00, 21238.95it/s]
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 22729.76it/s]
+white_ball   vis  81/81  last n/a         area x1.24  R-DINO last 0.9
+red_ball     vis  81/81  last n/a         area x1.35  R-DINO last 0.92
+domino1      vis  81/81  last changed     area x0.62  R-DINO last 0.49
+domino2      vis  81/81  last changed     area x0.58  R-DINO last 0.38
+domino3      vis  79/81  last changed     area x0.57  R-DINO last 0.46
+domino4      vis  80/81  last changed     area x0.54  R-DINO last 0.46
+domino_back  vis  81/81  last as_initial  area x1.03  R-DINO last 0.85
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 21051.76it/s]
+{
+ "n_objects": 7,
+ "state_kept_frac": 0.42857142857142855,
+ "start_iou_mean": 0.9470752132478617,
+ "n_vanished": 0,
+ "n_fused": 4,
+ "n_reverted": 0,
+ "n_exited": 0,
+ "appearance_mem_end_mean": 0.6358930894306728,
+ "appearance_latest_end_mean": 0.7045114636421204,
+ "target_success": true,
+ "failure_labels": [
+  "appearance_deformed",
+  "state_lost"
+ ]
+}
+white_ball     kept=True  lost=False rev=False startIoU=0.98 area_end=1.25 Rmem=0.8955358266830444 Rlat=0.9384589195251465
+red_ball       kept=True  lost=False rev=False startIoU=0.99 area_end=1.39 Rmem=0.9166545867919922 Rlat=0.9195061922073364
+domino1        kept=False lost=True  rev=False startIoU=0.97 area_end=0.69 Rmem=0.49251729249954224 Rlat=0.6600163578987122
+domino2        kept=False lost=True  rev=False startIoU=0.92 area_end=1.14 Rmem=0.3846452236175537 Rlat=0.46710312366485596
+domino3        kept=False lost=True  rev=False startIoU=0.89 area_end=1.12 Rmem=0.4595155715942383 Rlat=0.5044581890106201
+domino4        kept=False lost=True  rev=False startIoU=0.89 area_end=1.00 Rmem=0.45554572343826294 Rlat=0.5282905101776123
+domino_back    kept=True  lost=False rev=False startIoU=0.99 area_end=1.04 Rmem=0.8468374013900757 Rlat=0.9137469530105591
+[transformers] `memory_attention_rope_theta` is deprecated and will be removed in v5.0. Use `rope_parameters['rope_theta']` instead.
+Loading weights:   0%|          | 0/901 [00:00<?, ?it/s]Loading weights: 100%|██████████| 901/901 [00:00<00:00, 22691.11it/s]
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 21184.31it/s]
+white_ball   vis  81/81  last n/a         area x1.07  R-DINO last 0.9
+red_ball     vis  81/81  last n/a         area x0.94  R-DINO last 0.97
+domino1      vis  81/81  last changed     area x0.92  R-DINO last 0.2
+domino2      vis  81/81  last changed     area x0.42  R-DINO last 0.25
+domino3      vis  81/81  last changed     area x0.28  R-DINO last 0.29
+domino4      vis  81/81  last changed     area x0.49  R-DINO last 0.5
+domino_back  vis  81/81  last as_initial  area x1.05  R-DINO last 0.82
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 24292.39it/s]
+{
+ "n_objects": 7,
+ "state_kept_frac": 1.0,
+ "start_iou_mean": 0.9421731324383797,
+ "n_vanished": 0,
+ "n_fused": 0,
+ "n_reverted": 0,
+ "n_exited": 0,
+ "appearance_mem_end_mean": 0.559650719165802,
+ "appearance_latest_end_mean": 0.7149593191487449,
+ "target_success": true,
+ "failure_labels": [
+  "appearance_deformed"
+ ]
+}
+white_ball     kept=True  lost=False rev=False startIoU=0.97 area_end=1.06 Rmem=0.8958281874656677 Rlat=0.9339631795883179
+red_ball       kept=True  lost=False rev=False startIoU=0.98 area_end=0.97 Rmem=0.9663404822349548 Rlat=0.9570899605751038
+domino1        kept=True  lost=False rev=False startIoU=0.97 area_end=1.02 Rmem=0.19532537460327148 Rlat=0.4564990699291229
+domino2        kept=True  lost=False rev=False startIoU=0.93 area_end=0.82 Rmem=0.24878865480422974 Rlat=0.573040246963501
+domino3        kept=True  lost=False rev=False startIoU=0.86 area_end=0.57 Rmem=0.28872305154800415 Rlat=0.5301982164382935
+domino4        kept=True  lost=False rev=False startIoU=0.89 area_end=0.90 Rmem=0.5007820129394531 Rlat=0.6674866676330566
+domino_back    kept=True  lost=False rev=False startIoU=0.99 area_end=1.05 Rmem=0.821767270565033 Rlat=0.8864378929138184
+[transformers] `memory_attention_rope_theta` is deprecated and will be removed in v5.0. Use `rope_parameters['rope_theta']` instead.
+Loading weights:   0%|          | 0/901 [00:00<?, ?it/s]Loading weights: 100%|██████████| 901/901 [00:00<00:00, 22951.15it/s]
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 21654.66it/s]
+white_ball   vis  81/81  last n/a         area x1.28  R-DINO last 0.91
+red_ball     vis  81/81  last n/a         area x0.80  R-DINO last 0.95
+domino1      vis  81/81  last changed     area x1.45  R-DINO last 0.4
+domino2      vis  81/81  last changed     area x0.63  R-DINO last 0.25
+domino3      vis  81/81  last changed     area x0.13  R-DINO last 0.28
+domino4      vis  81/81  last changed     area x0.55  R-DINO last 0.23
+domino_back  vis  81/81  last as_initial  area x1.00  R-DINO last 0.81
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 23479.51it/s]
+{
+ "n_objects": 7,
+ "state_kept_frac": 1.0,
+ "start_iou_mean": 0.8529794941938491,
+ "n_vanished": 0,
+ "n_fused": 0,
+ "n_reverted": 0,
+ "n_exited": 0,
+ "appearance_mem_end_mean": 0.5472703618662698,
+ "appearance_latest_end_mean": 0.6866016089916229,
+ "target_success": true,
+ "failure_labels": [
+  "appearance_deformed"
+ ]
+}
+white_ball     kept=True  lost=False rev=False startIoU=0.98 area_end=1.43 Rmem=0.9130046963691711 Rlat=0.9275647401809692
+red_ball       kept=True  lost=False rev=False startIoU=0.98 area_end=0.99 Rmem=0.9541539549827576 Rlat=0.9453915357589722
+domino1        kept=True  lost=False rev=False startIoU=0.98 area_end=1.46 Rmem=0.3984781503677368 Rlat=0.692821204662323
+domino2        kept=True  lost=False rev=False startIoU=0.93 area_end=1.02 Rmem=0.24574807286262512 Rlat=0.6036386489868164
+domino3        kept=True  lost=False rev=False startIoU=0.33 area_end=0.45 Rmem=0.2788834571838379 Rlat=0.3350841701030731
+domino4        kept=True  lost=False rev=False startIoU=0.78 area_end=1.08 Rmem=0.23495757579803467 Rlat=0.3871256113052368
+domino_back    kept=True  lost=False rev=False startIoU=0.99 area_end=1.01 Rmem=0.8056666254997253 Rlat=0.9145853519439697
+[transformers] `memory_attention_rope_theta` is deprecated and will be removed in v5.0. Use `rope_parameters['rope_theta']` instead.
+Loading weights:   0%|          | 0/901 [00:00<?, ?it/s]Loading weights: 100%|██████████| 901/901 [00:00<00:00, 22801.04it/s]
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 22897.25it/s]
+white_ball   vis  81/81  last n/a         area x1.36  R-DINO last 0.9
+red_ball     vis  81/81  last n/a         area x0.80  R-DINO last 0.97
+domino1      vis  81/81  last changed     area x1.47  R-DINO last 0.49
+domino2      vis  81/81  last as_initial  area x1.21  R-DINO last 0.18
+domino3      vis  81/81  last changed     area x0.06  R-DINO last 0.12
+domino4      vis  81/81  last as_initial  area x0.27  R-DINO last 0.15
+domino_back  vis  81/81  last as_initial  area x1.04  R-DINO last 0.67
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 23441.26it/s]
+{
+ "n_objects": 7,
+ "state_kept_frac": 0.5714285714285714,
+ "start_iou_mean": 0.8645423725160368,
+ "n_vanished": 0,
+ "n_fused": 3,
+ "n_reverted": 2,
+ "n_exited": 0,
+ "appearance_mem_end_mean": 0.49845026220594135,
+ "appearance_latest_end_mean": 0.6580280619008201,
+ "target_success": true,
+ "failure_labels": [
+  "appearance_deformed",
+  "state_lost",
+  "state_reverted"
+ ]
+}
+white_ball     kept=True  lost=False rev=False startIoU=0.98 area_end=1.52 Rmem=0.9034386873245239 Rlat=0.9402328729629517
+red_ball       kept=True  lost=False rev=False startIoU=0.98 area_end=0.99 Rmem=0.9675214290618896 Rlat=0.9551042318344116
+domino1        kept=True  lost=False rev=False startIoU=0.98 area_end=1.48 Rmem=0.49059051275253296 Rlat=0.8564609289169312
+domino2        kept=False lost=True  rev=True  startIoU=0.92 area_end=1.97 Rmem=0.18028171360492706 Rlat=0.3657858371734619
+domino3        kept=False lost=True  rev=False startIoU=0.42 area_end=0.17 Rmem=0.11865837872028351 Rlat=0.22577163577079773
+domino4        kept=False lost=True  rev=True  startIoU=0.78 area_end=0.52 Rmem=0.15419736504554749 Rlat=0.441053569316864
+domino_back    kept=True  lost=False rev=False startIoU=0.99 area_end=1.05 Rmem=0.6744637489318848 Rlat=0.8217873573303223

@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/photos/books_push/t1_s0/state.json",
+ "target": "beige_book",
+ "mode": "direct",
+ "point_topleft": [
+  513.6475498332178,
+  222.3610873874019
+ ],
+ "point_csv": [
+  514,
+  258
+ ],
+ "angle": 0.0,
+ "force": 250.0,
+ "caption": "The thick beige book on the shelf is pushed to the right into the books next to it.",
+ "prev_turn": 1
+}

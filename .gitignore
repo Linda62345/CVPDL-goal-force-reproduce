@@ -26,3 +26,6 @@ logs/rack_preview.jpg
 imagegen/venv/
 imagegen/hf_cache/
 imagegen/pip_cache/
+
+# raw phone photos (personal originals; cropped versions live in datasets/multiturn)
+photos/

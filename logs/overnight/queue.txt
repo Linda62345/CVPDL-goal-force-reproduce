@@ -1,0 +1,38 @@
+#	#8 baseline Goal Force turn-2, seeds 1 2 (seed 0 already exists); one csv per job
+gf8_s0A	logs/overnight/gf.sh outputs/multiturn/exp8/gf_from_s0 '1 2' datasets/multiturn/dominos/t2A_white_direct_s0.csv
+eval8_base_test	logs/overnight/eval8_baseline.sh
+pilot8_s0A0	logs/overnight/repair_one.sh dominos s0_A_seed0 outputs/multiturn/dominos_turn2/step-3000_t2A_white_direct_s0__prj_coords_0.39_0.21__tgt_coords_0.39_0.21__prj_mass_-1.0__tgt_mass_-1.0__prj_force_350.0__prj_angle_0.0__tgt_indirect_force_-1.0__tgt_indirect_angle_-1.0__seed_0.mp4 outputs/multiturn/dominos/t1_s0/state.json white_ball 0 "The white pool ball rolls to the right, hits the red ball, and pushes into the fallen dominoes."
+gf8_s0B	logs/overnight/gf.sh outputs/multiturn/exp8/gf_from_s0 '1 2' datasets/multiturn/dominos/t2B_domino_goal_s0.csv
+pilot8v2_s0A0	logs/overnight/repair_one.sh dominos s0_A_seed0 outputs/multiturn/dominos_turn2/step-3000_t2A_white_direct_s0__prj_coords_0.39_0.21__tgt_coords_0.39_0.21__prj_mass_-1.0__tgt_mass_-1.0__prj_force_350.0__prj_angle_0.0__tgt_indirect_force_-1.0__tgt_indirect_angle_-1.0__seed_0.mp4 outputs/multiturn/dominos/t1_s0/state.json white_ball 0 "The white pool ball rolls to the right, hits the red ball, and pushes into the fallen dominoes."
+gf8_s1A	logs/overnight/gf.sh outputs/multiturn/exp8/gf_from_s1 '1 2' datasets/multiturn/dominos/t2A_white_direct_from_s1.csv
+#	#8 full comparison (v2): repair + eval, 11 remaining runs
+rep8_s0B0	logs/overnight/repair8.sh s0 B 0
+rep8_s0A1	logs/overnight/repair8.sh s0 A 1
+rep8_s0B1	logs/overnight/repair8.sh s0 B 1
+rep8_s0A2	logs/overnight/repair8.sh s0 A 2
+rep8_s0B2	logs/overnight/repair8.sh s0 B 2
+rep8_s1A0	logs/overnight/repair8.sh s1 A 0
+rep8_s1B0	logs/overnight/repair8.sh s1 B 0
+gf8_s1B	logs/overnight/gf.sh outputs/multiturn/exp8/gf_from_s1 '1 2' datasets/multiturn/dominos/t2B_domino_goal_from_s1.csv
+#	(after gf8_s1A / gf8_s1B)
+rep8_s1A1	logs/overnight/repair8.sh s1 A 1
+rep8_s1A2	logs/overnight/repair8.sh s1 A 2
+rep8_s1B1	logs/overnight/repair8.sh s1 B 1
+rep8_s1B2	logs/overnight/repair8.sh s1 B 2
+eval8_base_all	logs/overnight/eval8_baseline.sh
+#	#3 photos turn 1 (seed 0) + state extraction
+ph1_chips	logs/overnight/photo_t1.sh chips
+ph1_coffee	logs/overnight/photo_t1.sh coffee
+ph1_bottle	logs/overnight/photo_t1.sh bottle
+ph1_books_pull	logs/overnight/photo_t1.sh books_pull
+ph1_books_push	logs/overnight/photo_t1.sh books_push
+#	#3 chips turn 2 (diagnostic): push back right (3 seeds) + no-force control (3 seeds)
+ph2_chips	logs/overnight/photo_t2.sh chips front_bag direct 0 200 "0 1 2" "The large bag of potato chips slides back to the right on the supermarket shelf."
+ph2_chips_noforce	logs/overnight/photo_t2.sh chips front_bag direct 0 200 "0 1 2" "A large bag of potato chips rests on a supermarket shelf." noforce
+chips_global	logs/overnight/chips_global.sh
+ph2_coffee	logs/overnight/photo_t2.sh coffee mug direct 180 200 "0" "The white mug of coffee slides to the left across the blue tray."
+ph2_bottle	logs/overnight/photo_t2.sh bottle bottle direct 0 200 "0" "The white water bottle slides to the right across the wooden desk."
+ph2_books_pull	logs/overnight/photo_t2.sh books_pull book_rail_up direct 180 150 "0" "A book on the shelf is pushed to the left and tilts against the books next to it."
+ph2_books_push	logs/overnight/photo_t2.sh books_push beige_book direct 0 250 "0" "The thick beige book on the shelf is pushed to the right into the books next to it."
+#	#10 branch
+branch10	logs/overnight/branch10.sh

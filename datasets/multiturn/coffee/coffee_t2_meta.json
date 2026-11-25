@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/photos/coffee/t1_s0/state.json",
+ "target": "mug",
+ "mode": "direct",
+ "point_topleft": [
+  383.415489418728,
+  198.72861410464012
+ ],
+ "point_csv": [
+  383,
+  281
+ ],
+ "angle": 180.0,
+ "force": 200.0,
+ "caption": "The white mug of coffee slides to the left across the blue tray.",
+ "prev_turn": 1
+}

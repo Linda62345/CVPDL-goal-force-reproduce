@@ -1,0 +1,36 @@
+{
+ "photo": "photos/IMG_3886.JPG",
+ "crop": [
+  0,
+  1075,
+  2376,
+  2446
+ ],
+ "mode": "direct",
+ "point": [
+  525,
+  271
+ ],
+ "angle": 180,
+ "force": 200,
+ "caption": "A large bag of potato chips on a supermarket shelf slides to the left.",
+ "prompts": {
+  "front_bag": [
+   [
+    525,
+    271
+   ],
+   [
+    560,
+    330
+   ]
+  ],
+  "left_bag": [
+   [
+    105,
+    306
+   ]
+  ]
+ },
+ "notes": "Portrait photo; full-width landscape band. The FORMATO MAXI bag (about 1400 px tall) just fits (1371 px band); its top corner may lose a few px."
+}

@@ -1,0 +1,987 @@
+[
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s0_A_seed0/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": false,
+  "camera": [
+   290.9,
+   0.2
+  ],
+  "rel_disp": [
+   18.4,
+   48.9
+  ],
+  "angle_err": 69.4,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s0_A_seed1/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   141.8,
+   43.3
+  ],
+  "rel_disp": [
+   106.6,
+   0.1
+  ],
+  "angle_err": 0.0,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s0_A_seed2/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   137.0,
+   -10.2
+  ],
+  "rel_disp": [
+   215.8,
+   22.8
+  ],
+  "angle_err": 6.0,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s0_B_seed0/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": false,
+  "camera": [
+   310.9,
+   -0.1
+  ],
+  "rel_disp": [
+   -10.8,
+   -31.5
+  ],
+  "angle_err": 108.9,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s0_B_seed1/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   6.5,
+   11.6
+  ],
+  "rel_disp": [
+   28.7,
+   -8.8
+  ],
+  "angle_err": 17.0,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s0_B_seed2/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": false,
+  "rel_success": false,
+  "camera": [
+   -0.3,
+   -5.8
+  ],
+  "rel_disp": [
+   5.2,
+   11.2
+  ],
+  "angle_err": 65.0,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s1_A_seed0/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   -1.4,
+   -0.8
+  ],
+  "rel_disp": [
+   313.9,
+   69.0
+  ],
+  "angle_err": 12.4,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s1_A_seed1/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   14.4,
+   7.6
+  ],
+  "rel_disp": [
+   69.5,
+   -13.4
+  ],
+  "angle_err": 10.9,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s1_A_seed2/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   5.3,
+   1.5
+  ],
+  "rel_disp": [
+   249.5,
+   -85.3
+  ],
+  "angle_err": 18.9,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s1_B_seed0/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": false,
+  "rel_success": false,
+  "camera": [
+   63.5,
+   4.4
+  ],
+  "rel_disp": [
+   -52.6,
+   -10.3
+  ],
+  "angle_err": 168.9,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s1_B_seed1/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   37.0,
+   0.8
+  ],
+  "rel_disp": [
+   74.2,
+   -15.3
+  ],
+  "angle_err": 11.6,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/appearance/s1_B_seed2/eval.json",
+  "method": "appearance",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   105.0,
+   -2.9
+  ],
+  "rel_disp": [
+   51.6,
+   -11.2
+  ],
+  "angle_err": 12.3,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s0_A_seed0/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": false,
+  "camera": [
+   315.8,
+   0.3
+  ],
+  "rel_disp": [
+   -6.5,
+   48.0
+  ],
+  "angle_err": 97.8,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s0_A_seed1/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   171.6,
+   43.5
+  ],
+  "rel_disp": [
+   77.6,
+   0.3
+  ],
+  "angle_err": 0.2,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s0_A_seed2/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   129.1,
+   -6.7
+  ],
+  "rel_disp": [
+   224.6,
+   20.6
+  ],
+  "angle_err": 5.2,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s0_B_seed0/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": false,
+  "camera": [
+   317.0,
+   14.0
+  ],
+  "rel_disp": [
+   1.3,
+   -34.0
+  ],
+  "angle_err": 87.8,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s0_B_seed1/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": false,
+  "rel_success": false,
+  "camera": [
+   13.3,
+   11.5
+  ],
+  "rel_disp": [
+   -7.0,
+   0.9
+  ],
+  "angle_err": 172.6,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s0_B_seed2/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": false,
+  "rel_success": false,
+  "camera": [
+   12.9,
+   1.6
+  ],
+  "rel_disp": [
+   -31.0,
+   4.1
+  ],
+  "angle_err": 172.5,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s1_A_seed0/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   188.3,
+   19.3
+  ],
+  "rel_disp": [
+   123.9,
+   48.4
+  ],
+  "angle_err": 21.3,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s1_A_seed1/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   13.5,
+   3.5
+  ],
+  "rel_disp": [
+   445.4,
+   -96.2
+  ],
+  "angle_err": 12.2,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s1_A_seed2/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   3.5,
+   3.3
+  ],
+  "rel_disp": [
+   247.8,
+   -63.6
+  ],
+  "angle_err": 14.4,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s1_B_seed0/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   209.7,
+   15.5
+  ],
+  "rel_disp": [
+   96.7,
+   -21.3
+  ],
+  "angle_err": 12.5,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s1_B_seed1/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   -0.1,
+   0.7
+  ],
+  "rel_disp": [
+   112.5,
+   29.2
+  ],
+  "angle_err": 14.5,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/baseline/s1_B_seed2/eval.json",
+  "method": "baseline",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   103.0,
+   -2.2
+  ],
+  "rel_disp": [
+   54.9,
+   -13.0
+  ],
+  "angle_err": 13.3,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s0_A_seed0/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   249.3,
+   -5.4
+  ],
+  "rel_disp": [
+   60.0,
+   54.5
+  ],
+  "angle_err": 42.3,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s0_A_seed1/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   166.8,
+   34.9
+  ],
+  "rel_disp": [
+   83.6,
+   9.1
+  ],
+  "angle_err": 6.2,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s0_A_seed2/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   126.6,
+   -7.1
+  ],
+  "rel_disp": [
+   228.0,
+   22.3
+  ],
+  "angle_err": 5.6,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s0_B_seed0/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": false,
+  "camera": [
+   294.9,
+   -12.0
+  ],
+  "rel_disp": [
+   13.7,
+   2.6
+  ],
+  "angle_err": 10.6,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s0_B_seed1/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": false,
+  "rel_success": false,
+  "camera": [
+   8.1,
+   12.6
+  ],
+  "rel_disp": [
+   -28.1,
+   1.7
+  ],
+  "angle_err": 176.5,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s0_B_seed2/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": false,
+  "rel_success": false,
+  "camera": [
+   39.3,
+   1.9
+  ],
+  "rel_disp": [
+   -25.6,
+   -2.0
+  ],
+  "angle_err": 175.5,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s1_A_seed0/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   189.8,
+   23.5
+  ],
+  "rel_disp": [
+   123.5,
+   44.1
+  ],
+  "angle_err": 19.7,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s1_A_seed1/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   13.7,
+   5.5
+  ],
+  "rel_disp": [
+   447.6,
+   -98.2
+  ],
+  "angle_err": 12.4,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s1_A_seed2/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   2.3,
+   3.1
+  ],
+  "rel_disp": [
+   248.8,
+   -64.8
+  ],
+  "angle_err": 14.6,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s1_B_seed0/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   199.9,
+   11.3
+  ],
+  "rel_disp": [
+   93.5,
+   11.4
+  ],
+  "angle_err": 6.9,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s1_B_seed1/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   -0.2,
+   2.1
+  ],
+  "rel_disp": [
+   107.8,
+   27.4
+  ],
+  "angle_err": 14.2,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/exp8/eval/full/s1_B_seed2/eval.json",
+  "method": "full",
+  "scene": "dominos",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   102.4,
+   -2.9
+  ],
+  "rel_disp": [
+   51.7,
+   -11.5
+  ],
+  "angle_err": 12.5,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/ph_books_pull/eval/appearance/books_pull_t2_seed0/eval.json",
+  "method": "appearance",
+  "scene": "books_pull",
+  "abs_success": true,
+  "rel_success": false,
+  "camera": [
+   -52.8,
+   -2.7
+  ],
+  "rel_disp": [
+   24.9,
+   26.3
+  ],
+  "angle_err": 133.4,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/ph_books_pull/eval/baseline/books_pull_t2_seed0/eval.json",
+  "method": "baseline",
+  "scene": "books_pull",
+  "abs_success": true,
+  "rel_success": false,
+  "camera": [
+   -50.9,
+   -2.0
+  ],
+  "rel_disp": [
+   -2.0,
+   -26.7
+  ],
+  "angle_err": 85.7,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/ph_books_pull/eval/full/books_pull_t2_seed0/eval.json",
+  "method": "full",
+  "scene": "books_pull",
+  "abs_success": true,
+  "rel_success": false,
+  "camera": [
+   -51.1,
+   -1.7
+  ],
+  "rel_disp": [
+   3.4,
+   4.7
+  ],
+  "angle_err": 126.1,
+  "need_px": 15
+ },
+ {
+  "eval": "outputs/multiturn/ph_books_push/eval/appearance/books_push_t2_seed0/eval.json",
+  "method": "appearance",
+  "scene": "books_push",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   269.23773384929154,
+   240.56424553377744
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_books_push/eval/baseline/books_push_t2_seed0/eval.json",
+  "method": "baseline",
+  "scene": "books_push",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   -2.2,
+   -2.9
+  ],
+  "rel_disp": [
+   285.7,
+   253.3
+  ],
+  "angle_err": 41.6,
+  "need_px": 62.4
+ },
+ {
+  "eval": "outputs/multiturn/ph_books_push/eval/full/books_push_t2_seed0/eval.json",
+  "method": "full",
+  "scene": "books_push",
+  "abs_success": true,
+  "rel_success": true,
+  "camera": [
+   -1.4,
+   -8.4
+  ],
+  "rel_disp": [
+   296.7,
+   260.5
+  ],
+  "angle_err": 41.3,
+  "need_px": 62.4
+ },
+ {
+  "eval": "outputs/multiturn/ph_bottle/eval/appearance/bottle_t2_seed0/eval.json",
+  "method": "appearance",
+  "scene": "bottle",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   607.8302279470945,
+   49.22916386007455
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_bottle/eval/baseline/bottle_t2_seed0/eval.json",
+  "method": "baseline",
+  "scene": "bottle",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   606.3079994467514,
+   41.84280881142587
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_bottle/eval/full/bottle_t2_seed0/eval.json",
+  "method": "full",
+  "scene": "bottle",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   581.2907963322641,
+   39.16334004406866
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips/eval/appearance/chips_t2_seed0/eval.json",
+  "method": "appearance",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   281.44735757488684,
+   -35.641687860805234
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips/eval/appearance/chips_t2_seed1/eval.json",
+  "method": "appearance",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   346.29445034367495,
+   -60.17743879508146
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips/eval/appearance/chips_t2_seed2/eval.json",
+  "method": "appearance",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   298.28272715029976,
+   -74.98971007026756
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips/eval/baseline/chips_t2_seed0/eval.json",
+  "method": "baseline",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   285.2689443235834,
+   -32.03797138101771
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips/eval/baseline/chips_t2_seed1/eval.json",
+  "method": "baseline",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   337.77821189608017,
+   -67.81598392764977
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips/eval/baseline/chips_t2_seed2/eval.json",
+  "method": "baseline",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   293.0211486306464,
+   -85.3241752706748
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips/eval/full/chips_t2_seed0/eval.json",
+  "method": "full",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   286.14433420561136,
+   -35.79237697375925
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips/eval/full/chips_t2_seed1/eval.json",
+  "method": "full",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   339.03381007769326,
+   -68.86102579201906
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips/eval/full/chips_t2_seed2/eval.json",
+  "method": "full",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 0 reference objects",
+  "abs_disp": [
+   292.8799049912509,
+   -90.48110623568533
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/appearance/chips_t2_seed0/eval.json",
+  "method": "appearance",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/appearance/chips_t2_seed1/eval.json",
+  "method": "appearance",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/appearance/chips_t2_seed2/eval.json",
+  "method": "appearance",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/appearance_global/chips_t2_seed0/eval.json",
+  "method": "appearance_global",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/appearance_global/chips_t2_seed1/eval.json",
+  "method": "appearance_global",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/appearance_global/chips_t2_seed2/eval.json",
+  "method": "appearance_global",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/baseline/chips_t2_seed0/eval.json",
+  "method": "baseline",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/baseline/chips_t2_seed1/eval.json",
+  "method": "baseline",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/baseline/chips_t2_seed2/eval.json",
+  "method": "baseline",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/full/chips_t2_seed0/eval.json",
+  "method": "full",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/full/chips_t2_seed1/eval.json",
+  "method": "full",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_chips_noforce/eval/full/chips_t2_seed2/eval.json",
+  "method": "full",
+  "scene": "chips",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "no-force control"
+ },
+ {
+  "eval": "outputs/multiturn/ph_coffee/eval/appearance/coffee_t2_seed0/eval.json",
+  "method": "appearance",
+  "scene": "coffee",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 1 reference objects",
+  "abs_disp": [
+   -376.13668340628453,
+   23.01329768424199
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_coffee/eval/baseline/coffee_t2_seed0/eval.json",
+  "method": "baseline",
+  "scene": "coffee",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 1 reference objects",
+  "abs_disp": [
+   -374.8289321615382,
+   21.845891594342646
+  ]
+ },
+ {
+  "eval": "outputs/multiturn/ph_coffee/eval/full/coffee_t2_seed0/eval.json",
+  "method": "full",
+  "scene": "coffee",
+  "abs_success": true,
+  "rel_success": null,
+  "reason": "only 1 reference objects",
+  "abs_disp": [
+   -316.52811482160354,
+   28.188274428138016
+  ]
+ }
+]

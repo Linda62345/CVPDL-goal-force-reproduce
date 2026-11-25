@@ -1,0 +1,2 @@
+image,projectile_force_angle,projectile_force_magnitude,projectile_coordx,projectile_coordy,projectile_mass,target_indirect_force_angle,target_indirect_force_magnitude,target_coordx,target_coordy,target_mass,width,height,caption
+books_pull_t2.png,180.0,150.0,309,318,-1,-1.0,-1.0,309,318,-1,832,480,A book on the shelf is pushed to the left and tilts against the books next to it.

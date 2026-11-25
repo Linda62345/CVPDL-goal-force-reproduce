@@ -1,0 +1,2 @@
+image,projectile_force_angle,projectile_force_magnitude,projectile_coordx,projectile_coordy,projectile_mass,target_indirect_force_angle,target_indirect_force_magnitude,target_coordx,target_coordy,target_mass,width,height,caption
+bottle_t1.png,180,200,444,262,-1,-1.0,-1.0,444,262,-1,832,480,"A hand pushes a white water bottle to the left across a wooden desk."

@@ -1,0 +1,60 @@
+{
+ "photo": "photos/IMG_9251.jpg",
+ "crop": [
+  0,
+  700,
+  5712,
+  3995
+ ],
+ "mode": "direct",
+ "point": [
+  342,
+  248
+ ],
+ "angle": 0,
+ "force": 250,
+ "caption": "The thick beige book on the shelf is pushed to the right into the books next to it.",
+ "prompts": {
+  "beige_book": [
+   [
+    342,
+    248
+   ],
+   [
+    330,
+    200
+   ]
+  ],
+  "black_book": [
+   [
+    430,
+    277
+   ]
+  ],
+  "blue_book": [
+   [
+    510,
+    218
+   ]
+  ],
+  "white_book": [
+   [
+    597,
+    262
+   ]
+  ],
+  "white_book2": [
+   [
+    677,
+    233
+   ]
+  ],
+  "hand": [
+   [
+    131,
+    233
+   ]
+  ]
+ },
+ "notes": "The finger cannot be cropped out without cutting the beige book (the book spans y 1080-3850 of 4284), so the hand stays and is treated as static background (no force on it)."
+}

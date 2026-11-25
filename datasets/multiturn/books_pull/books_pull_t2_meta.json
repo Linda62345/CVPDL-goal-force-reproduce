@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/photos/books_pull/t1_s0/state.json",
+ "target": "book_rail_up",
+ "mode": "direct",
+ "point_topleft": [
+  309.4199743918054,
+  161.72343149807938
+ ],
+ "point_csv": [
+  309,
+  318
+ ],
+ "angle": 180.0,
+ "force": 150.0,
+ "caption": "A book on the shelf is pushed to the left and tilts against the books next to it.",
+ "prev_turn": 1
+}
