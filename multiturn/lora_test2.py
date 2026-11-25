@@ -23,6 +23,7 @@ def run(cmd, env=None):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lora", required=True)
+    ap.add_argument("--conds", nargs="+", default=["nolora", "lora"])
     a = ap.parse_args()
     env = dict(os.environ, HF_HOME=str(ROOT / "imagegen/hf_cache"))
     fails = []
@@ -33,11 +34,11 @@ def main():
             meta = ROOT / f"outputs/multiturn/{exp}/repair/{rid}/full_meta.json"
             cap = json.load(open(meta))["prompt"]
             out = ROOT / f"outputs/multiturn/lora_{exp}/repair/{rid}"
-            for cond in ["nolora", "lora"]:
+            for cond in a.conds:
                 cmd = ["venv/bin/python", "-I", "multiturn/memory_repair.py", "--video", e["video"],
                        "--track", str(Path(ev).parent / "track"), "--prev_state", e["prev_state"],
                        "--target", e["target"]["name"], "--cond", cond, "--out", str(out), "--prompt", cap]
-                if cond == "lora":
+                if cond in ("lora", "lora_orig"):
                     cmd += ["--lora", a.lora]
                 if run(cmd, env) != 0:
                     fails.append((exp, rid, cond, "repair"))
@@ -49,9 +50,14 @@ def main():
                     fails.append((exp, rid, cond, "eval"))
             full = ROOT / f"outputs/multiturn/{exp}/repair/{rid}/full.mp4"
             vids = [e["video"], str(full), str(out / "nolora.mp4"), str(out / "lora.mp4")]
-            if all(Path(v).exists() for v in vids):
+            if all(Path(v).exists() for v in vids) and not (out / "compare4.jpg").exists():
                 run(["imagegen/venv/bin/python", "-I", "multiturn/compare3.py", "--videos", *vids,
                      "--labels", "baseline", "full", "nolora", "lora", "--out", str(out / "compare4.jpg")], env)
+            app = ROOT / f"outputs/multiturn/{exp}/repair/{rid}/appearance.mp4"
+            vids5 = [e["video"], str(app), str(full), str(out / "lora.mp4"), str(out / "lora_orig.mp4")]
+            if all(Path(v).exists() for v in vids5):
+                run(["imagegen/venv/bin/python", "-I", "multiturn/compare3.py", "--videos", *vids5,
+                     "--labels", "baseline", "appearance", "full", "lora", "lora_orig", "--out", str(out / "compare5.jpg")], env)
     print("FAILS", fails)
     return 1 if fails else 0
 

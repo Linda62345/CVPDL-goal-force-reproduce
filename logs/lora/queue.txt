@@ -7,3 +7,5 @@ t1_s3000	venv/bin/python -u -I multiturn/lora_eval.py gen --variant step-3000 --
 t1_score	HF_HOME=$PWD/imagegen/hf_cache imagegen/venv/bin/python -u -I multiturn/lora_eval.py score
 t2	python3 -u multiturn/lora_test2.py --lora outputs/lora/vace_appearance/step-3000.safetensors
 agg	imagegen/venv/bin/python -I multiturn/aggregate.py --out reports/lora_assets
+t3_orig	python3 -u multiturn/lora_test2.py --lora outputs/lora/vace_appearance/step-3000.safetensors --conds lora_orig
+agg2	imagegen/venv/bin/python -I multiturn/aggregate.py --out reports/lora_assets
