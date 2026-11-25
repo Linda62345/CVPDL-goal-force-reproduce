@@ -1,0 +1,36 @@
+{
+ "photo": "photos/IMG_8550.jpg",
+ "crop": [
+  0,
+  1500,
+  3024,
+  3245
+ ],
+ "mode": "direct",
+ "point": [
+  413,
+  303
+ ],
+ "angle": 90,
+ "force": 200,
+ "caption": "A white mug of coffee on a blue tray slides backward and bumps into the iced drink cup behind it.",
+ "prompts": {
+  "mug": [
+   [
+    413,
+    303
+   ],
+   [
+    450,
+    250
+   ]
+  ],
+  "drink_cup": [
+   [
+    481,
+    83
+   ]
+  ]
+ },
+ "notes": "Portrait photo; the band keeps the whole white mug (main object). The iced drink behind it keeps only its lower body (lid and straw are cut)."
+}

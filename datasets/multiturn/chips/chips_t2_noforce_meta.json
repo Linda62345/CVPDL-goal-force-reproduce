@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/photos/chips/t1_s0/state.json",
+ "target": "front_bag",
+ "mode": "direct",
+ "point_topleft": [
+  176.24013034606256,
+  349.292664390122
+ ],
+ "point_csv": [
+  176,
+  131
+ ],
+ "angle": 0.0,
+ "force": 200.0,
+ "caption": "A large bag of potato chips rests on a supermarket shelf.",
+ "prev_turn": 1
+}

@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/dominos/t1_s0/state.json",
+ "target": "domino_back",
+ "mode": "direct",
+ "point_topleft": [
+  391.4995938261576,
+  258.0820471161657
+ ],
+ "point_csv": [
+  391,
+  222
+ ],
+ "angle": 0.0,
+ "force": 150.0,
+ "caption": "A standing domino in the back row is pushed to the right and the dominoes next to it fall over one after another.",
+ "prev_turn": 1
+}

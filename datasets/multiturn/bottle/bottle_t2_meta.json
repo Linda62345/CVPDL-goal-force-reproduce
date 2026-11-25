@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/photos/bottle/t1_s0/state.json",
+ "target": "bottle",
+ "mode": "direct",
+ "point_topleft": [
+  217.03683407541178,
+  192.288071737709
+ ],
+ "point_csv": [
+  217,
+  288
+ ],
+ "angle": 0.0,
+ "force": 200.0,
+ "caption": "The white water bottle slides to the right across the wooden desk.",
+ "prev_turn": 1
+}

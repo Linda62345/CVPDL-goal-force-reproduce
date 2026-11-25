@@ -1,0 +1,48 @@
+{
+ "photo": "photos/IMG_9247.jpg",
+ "crop": [
+  0,
+  900,
+  5712,
+  4195
+ ],
+ "mode": "direct",
+ "point": [
+  641,
+  204
+ ],
+ "angle": 90,
+ "force": 200,
+ "caption": "A hand pushes the book it is holding back into the bookshelf.",
+ "prompts": {
+  "held_book": [
+   [
+    641,
+    204
+   ],
+   [
+    600,
+    150
+   ]
+  ],
+  "hand": [
+   [
+    670,
+    393
+   ]
+  ],
+  "book_rail_up": [
+   [
+    313,
+    146
+   ]
+  ],
+  "book_pale_tall": [
+   [
+    248,
+    117
+   ]
+  ]
+ },
+ "notes": "The held book (about 3490 px tall) is taller than the band (3295 px), so about 100 px is cut at the top and bottom. Pushing it into the shelf is motion into depth (shown as moving up and shrinking)."
+}

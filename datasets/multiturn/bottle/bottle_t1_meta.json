@@ -1,0 +1,36 @@
+{
+ "photo": "photos/IMG_9246.jpg",
+ "crop": [
+  0,
+  700,
+  5712,
+  3995
+ ],
+ "mode": "direct",
+ "point": [
+  444,
+  218
+ ],
+ "angle": 180,
+ "force": 200,
+ "caption": "A hand pushes a white water bottle to the left across a wooden desk.",
+ "prompts": {
+  "bottle": [
+   [
+    444,
+    218
+   ],
+   [
+    444,
+    150
+   ]
+  ],
+  "hand": [
+   [
+    545,
+    365
+   ]
+  ]
+ },
+ "notes": "The hand is part of the scene here (user request): the force is on the bottle, and the hand should follow."
+}

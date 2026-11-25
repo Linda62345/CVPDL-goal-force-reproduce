@@ -169,6 +169,9 @@ def main(args):
             prompt                  = data["prompt"]
             input_image             = data["video"]
             control_signal_video    = data["control_video"]
+            # [reproduce] no-force control run (multi-turn diagnostic): GF_ZERO_CONTROL=1 zeroes the whole control signal
+            if os.environ.get("GF_ZERO_CONTROL") == "1":
+                control_signal_video = torch.zeros_like(control_signal_video)
             assert(len(input_image) == 1) # e.g. [<PIL.Image.Image image mode=RGB size=832x480 at 0x7F5379ACC1D0>] 
 
             # create file output names

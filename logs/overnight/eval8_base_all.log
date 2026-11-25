@@ -1,0 +1,12 @@
+[skip] exists outputs/multiturn/exp8/eval/baseline/s0_A_seed0/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s0_B_seed0/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s0_A_seed1/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s0_B_seed1/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s0_A_seed2/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s0_B_seed2/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s1_A_seed0/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s1_B_seed0/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s1_A_seed1/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s1_B_seed1/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s1_A_seed2/eval.json
+[skip] exists outputs/multiturn/exp8/eval/baseline/s1_B_seed2/eval.json

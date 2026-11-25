@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/dominos/t1_s0/state.json",
+ "target": "red_ball",
+ "mode": "direct",
+ "point_topleft": [
+  421.159655347187,
+  367.5843892549417
+ ],
+ "point_csv": [
+  421,
+  112
+ ],
+ "angle": 180.0,
+ "force": 200.0,
+ "caption": "The red pool ball rolls back to the left and hits the white ball.",
+ "prev_turn": 1
+}

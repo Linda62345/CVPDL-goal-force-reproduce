@@ -1,0 +1,8 @@
+[runner] start 2026-11-25 00:37:31
+[runner] 2026-11-25 00:37:31 START gf8_s0A (attempt 1)
+[runner] 2026-11-25 01:21:41 OK gf8_s0A (2650s)
+[runner] 2026-11-25 01:21:41 START eval8_base_test (attempt 1)
+[runner] 2026-11-25 01:24:13 FAIL eval8_base_test rc=1 (152s)
+[runner] 2026-11-25 01:24:13 START eval8_base_test (attempt 2)
+[runner] 2026-11-25 01:24:13 FAIL eval8_base_test rc=1 (0s)
+[runner] 2026-11-25 01:24:13 START pilot8_s0A0 (attempt 1)
