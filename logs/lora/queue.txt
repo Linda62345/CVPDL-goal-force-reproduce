@@ -1,0 +1,9 @@
+#	VACE appearance LoRA (multiturn/lora_plan.md). One GPU job at a time.
+train	venv/bin/python -u -I multiturn/train_vace_lora.py --out outputs/lora/vace_appearance --steps 3000 --save_every 500
+t1_base	venv/bin/python -u -I multiturn/lora_eval.py gen --variant base
+t1_s1000	venv/bin/python -u -I multiturn/lora_eval.py gen --variant step-1000 --lora outputs/lora/vace_appearance/step-1000.safetensors
+t1_s2000	venv/bin/python -u -I multiturn/lora_eval.py gen --variant step-2000 --lora outputs/lora/vace_appearance/step-2000.safetensors
+t1_s3000	venv/bin/python -u -I multiturn/lora_eval.py gen --variant step-3000 --lora outputs/lora/vace_appearance/step-3000.safetensors
+t1_score	HF_HOME=$PWD/imagegen/hf_cache imagegen/venv/bin/python -u -I multiturn/lora_eval.py score
+t2	python3 -u multiturn/lora_test2.py --lora outputs/lora/vace_appearance/step-3000.safetensors
+agg	imagegen/venv/bin/python -I multiturn/aggregate.py --out reports/lora_assets
