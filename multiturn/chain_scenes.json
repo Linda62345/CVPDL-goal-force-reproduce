@@ -1,0 +1,168 @@
+{
+ "_doc": "Experiment A (multiturn/paper_photos_plan.md section 9): 5-turn chains on paper photos, direct force on every turn. 11/27: every turn pushes one object TOWARD another so they collide (angle 'toward:<obj>' = direction from the target's tracked centroid to that object's centroid at the end of the previous turn; turn 1 uses the clicks). Force per scene is small (100-150) so objects stay in frame. One seed (0).",
+ "cantaloupes": {
+  "image": "datasets/examples/multi-object-collision/images/_cantaloupes.png",
+  "force": 150,
+  "prompts": {
+   "melon_left": [
+    [
+     324,
+     306
+    ]
+   ],
+   "melon_right": [
+    [
+     596,
+     320
+    ]
+   ],
+   "board": [
+    [
+     390,
+     336
+    ]
+   ]
+  },
+  "turns": [
+   [
+    "melon_right",
+    "toward:melon_left",
+    "The cantaloupe on the right rolls to the left and bumps into the other cantaloupe. The camera is static."
+   ],
+   [
+    "melon_left",
+    "toward:melon_right",
+    "The cantaloupe on the left rolls to the right and bumps into the other cantaloupe. The camera is static."
+   ],
+   [
+    "melon_right",
+    "toward:melon_left",
+    "The cantaloupe on the right rolls to the left and bumps into the other cantaloupe. The camera is static."
+   ],
+   [
+    "melon_left",
+    "toward:melon_right",
+    "The cantaloupe on the left rolls to the right and bumps into the other cantaloupe. The camera is static."
+   ],
+   [
+    "melon_right",
+    "toward:melon_left",
+    "The cantaloupe on the right rolls to the left and bumps into the other cantaloupe. The camera is static."
+   ]
+  ]
+ },
+ "pool_tool": {
+  "image": "datasets/examples/tool-object-interaction/images/_pool_tool.png",
+  "force": 120,
+  "prompts": {
+   "white_ball": [
+    [
+     177,
+     276
+    ]
+   ],
+   "yellow_ball": [
+    [
+     350,
+     272
+    ]
+   ]
+  },
+  "turns": [
+   [
+    "yellow_ball",
+    "toward:white_ball",
+    "The yellow pool ball rolls slowly to the left and hits the white ball. The camera is static."
+   ],
+   [
+    "white_ball",
+    "toward:yellow_ball",
+    "The white pool ball rolls slowly to the right and hits the yellow ball. The camera is static."
+   ],
+   [
+    "yellow_ball",
+    "toward:white_ball",
+    "The yellow pool ball rolls slowly to the left and hits the white ball. The camera is static."
+   ],
+   [
+    "white_ball",
+    "toward:yellow_ball",
+    "The white pool ball rolls slowly to the right and hits the yellow ball. The camera is static."
+   ],
+   [
+    "yellow_ball",
+    "toward:white_ball",
+    "The yellow pool ball rolls slowly to the left and hits the white ball. The camera is static."
+   ]
+  ]
+ },
+ "paw_tool1": {
+  "image": "datasets/examples/animal-object-interaction/images/_paw_tool1.png",
+  "force": 100,
+  "prompts": {
+   "white_pawn_target": [
+    [
+     515,
+     278
+    ]
+   ],
+   "dark_bishop": [
+    [
+     258,
+     250
+    ]
+   ],
+   "dark_king": [
+    [
+     248,
+     170
+    ]
+   ],
+   "white_pawn_left": [
+    [
+     208,
+     228
+    ]
+   ],
+   "white_bishop": [
+    [
+     478,
+     340
+    ]
+   ],
+   "white_pawn_bottom": [
+    [
+     315,
+     402
+    ]
+   ]
+  },
+  "turns": [
+   [
+    "dark_bishop",
+    "toward:white_bishop",
+    "A dark wooden chess piece slides across the board and knocks into a light wooden chess piece. The camera is static."
+   ],
+   [
+    "white_pawn_bottom",
+    "toward:dark_bishop",
+    "A light wooden pawn slides across the board and knocks into a dark chess piece. The camera is static."
+   ],
+   [
+    "white_pawn_left",
+    "toward:dark_king",
+    "A light wooden pawn slides across the board and knocks into a dark chess piece. The camera is static."
+   ],
+   [
+    "white_bishop",
+    "toward:white_pawn_target",
+    "A light wooden chess piece slides across the board and knocks into another light piece. The camera is static."
+   ],
+   [
+    "dark_king",
+    "toward:white_pawn_bottom",
+    "A dark wooden chess piece slides across the board and knocks into a light wooden pawn. The camera is static."
+   ]
+  ]
+ }
+}

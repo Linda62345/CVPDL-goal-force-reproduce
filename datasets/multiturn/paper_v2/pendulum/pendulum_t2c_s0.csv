@@ -1,0 +1,2 @@
+image,projectile_force_angle,projectile_force_magnitude,projectile_coordx,projectile_coordy,projectile_mass,target_indirect_force_angle,target_indirect_force_magnitude,target_coordx,target_coordy,target_mass,width,height,caption
+pendulum_t2c_s0.png,-1.0,-1.0,390,109,-1,351.0,150.0,743,52,-1,832,480,"The pendulum swings again, striking the fallen red block and pushing it across the table. The camera is static."

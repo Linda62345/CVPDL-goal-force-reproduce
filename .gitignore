@@ -29,3 +29,6 @@ imagegen/pip_cache/
 
 # raw phone photos (personal originals; cropped versions live in datasets/multiturn)
 photos/
+
+# DAVIS 2017 (downloaded for the VACE appearance LoRA; not ours to redistribute)
+datasets/davis/

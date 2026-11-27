@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper/paw_tool3/t1_s0/state.json",
+ "target": "ball",
+ "mode": "direct",
+ "point_topleft": [
+  170.03382618413136,
+  260.1715378664145
+ ],
+ "point_csv": [
+  170,
+  220
+ ],
+ "angle": 180.0,
+ "force": 200.0,
+ "caption": "The red ball rolls further to the left across the grass. The camera is static.",
+ "prev_turn": 1
+}

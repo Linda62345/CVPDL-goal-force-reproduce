@@ -1,0 +1,2 @@
+image,projectile_force_angle,projectile_force_magnitude,projectile_coordx,projectile_coordy,projectile_mass,target_indirect_force_angle,target_indirect_force_magnitude,target_coordx,target_coordy,target_mass,width,height,caption
+pool_tool_c1.png,181,120,350,208,-1,-1.0,-1.0,350,208,-1,832,480,The yellow pool ball rolls slowly to the left and hits the white ball. The camera is static.

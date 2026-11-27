@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper/pendulum/t1_s0/state.json",
+ "target": "red_block",
+ "mode": "direct",
+ "point_topleft": [
+  749.9961593493485,
+  428.5057609759771
+ ],
+ "point_csv": [
+  750,
+  51
+ ],
+ "angle": 180.0,
+ "force": 200.0,
+ "caption": "The fallen red block slides to the left across the table. The camera is static.",
+ "prev_turn": 1
+}

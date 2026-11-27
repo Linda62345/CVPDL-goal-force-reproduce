@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/chain/paw_tool1/turn4/state.json",
+ "target": "dark_king",
+ "mode": "direct",
+ "point_topleft": [
+  408.04352030947774,
+  128.38394584139266
+ ],
+ "point_csv": [
+  408,
+  352
+ ],
+ "angle": 247.0,
+ "force": 100.0,
+ "caption": "A dark wooden chess piece slides across the board and knocks into a light wooden pawn. The camera is static.",
+ "prev_turn": 4
+}

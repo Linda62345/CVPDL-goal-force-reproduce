@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper/tennis/t1_s1/state.json",
+ "target": "ball_bottom",
+ "mode": "direct",
+ "point_topleft": [
+  475.922263681592,
+  378.8815298507463
+ ],
+ "point_csv": [
+  476,
+  101
+ ],
+ "angle": 0.0,
+ "force": 200.0,
+ "caption": "A tennis ball rolls to the right across the court. The camera is static.",
+ "prev_turn": 1
+}

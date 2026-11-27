@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper/cantaloupes/t1_s1/state.json",
+ "target": "melon_right",
+ "mode": "direct",
+ "point_topleft": [
+  756.9884228920927,
+  296.65421581476625
+ ],
+ "point_csv": [
+  757,
+  183
+ ],
+ "angle": 181.0,
+ "force": 150.0,
+ "caption": "The cantaloupe rolls across the surface and bumps into the other cantaloupe. The camera is static.",
+ "prev_turn": 1
+}

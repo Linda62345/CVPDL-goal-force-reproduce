@@ -1,0 +1,2 @@
+image,projectile_force_angle,projectile_force_magnitude,projectile_coordx,projectile_coordy,projectile_mass,target_indirect_force_angle,target_indirect_force_magnitude,target_coordx,target_coordy,target_mass,width,height,caption
+paw_tool2_t2_s0.png,0.0,200.0,117,439,-1,-1.0,-1.0,117,439,-1,832,480,The dog nudges the blue ball back to the right with its paw. The camera is static.

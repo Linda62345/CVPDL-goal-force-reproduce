@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper/paw_tool2/t1_s0/state.json",
+ "target": "ball",
+ "mode": "direct",
+ "point_topleft": [
+  116.63207547169812,
+  40.593160377358494
+ ],
+ "point_csv": [
+  117,
+  439
+ ],
+ "angle": 0.0,
+ "force": 200.0,
+ "caption": "The dog nudges the blue ball back to the right with its paw. The camera is static.",
+ "prev_turn": 1
+}

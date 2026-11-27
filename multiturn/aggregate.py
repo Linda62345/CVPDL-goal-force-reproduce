@@ -13,9 +13,9 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-METHODS = ["baseline", "appearance", "full", "appearance_global"]
-COL = {"baseline": (110, 110, 110), "appearance": (230, 120, 20), "full": (20, 140, 120), "appearance_global": (150, 60, 160)}
-NAME = {"baseline": "baseline", "appearance": "appearance memory only", "full": "full (appearance + state)", "appearance_global": "appearance, whole-frame (diag.)"}
+METHODS = ["baseline", "appearance", "full", "nolora", "lora", "lora_orig", "appearance_global"]
+COL = {"baseline": (110, 110, 110), "appearance": (230, 120, 20), "full": (20, 140, 120), "nolora": (70, 110, 200), "lora": (210, 40, 90), "lora_orig": (240, 180, 0), "appearance_global": (150, 60, 160)}
+NAME = {"baseline": "baseline", "appearance": "appearance memory only", "full": "full (appearance + state)", "nolora": "no state rule, no LoRA", "lora": "no state rule + LoRA", "lora_orig": "LoRA + original reference", "appearance_global": "appearance, whole-frame (diag.)"}
 
 
 def load():

@@ -1,0 +1,74 @@
+pool_tool_s0	logs/paper/scene.sh pool_tool 0
+tennis_s0	logs/paper/scene.sh tennis 0
+golf_s0	logs/paper/scene.sh golf 0
+cantaloupes_s0	logs/paper/scene.sh cantaloupes 0
+pendulum_s0	logs/paper/scene.sh pendulum 0
+paw_tool1_s0	logs/paper/scene.sh paw_tool1 0
+toycar_s0	logs/paper/scene.sh toycar 0
+soccer_tool_s0	logs/paper/scene.sh soccer_tool 0
+paw_tool3_s0	logs/paper/scene.sh paw_tool3 0
+paw_tool2_s0	logs/paper/scene.sh paw_tool2 0
+bulb_tool_s0	logs/paper/scene.sh bulb_tool 0
+pool_tool_s1	logs/paper/scene.sh pool_tool 1
+tennis_s1	logs/paper/scene.sh tennis 1
+golf_s1	logs/paper/scene.sh golf 1
+chainA_cantaloupes	logs/paper/chain.sh cantaloupes
+review_chain_cantaloupes	imagegen/venv/bin/python -I multiturn/paper_review.py
+cantaloupes_s1	logs/paper/scene.sh cantaloupes 1
+t2b_pendulum_s1	logs/paper/scene_t2b.sh pendulum 1
+t2b_paw_tool1_s1	logs/paper/scene_t2b.sh paw_tool1 1
+t2b_toycar_s1	logs/paper/scene_t2b.sh toycar 1
+t2b_soccer_tool_s1	logs/paper/scene_t2b.sh soccer_tool 1
+t2b_paw_tool3_s1	logs/paper/scene_t2b.sh paw_tool3 1
+t2b_paw_tool2_s1	logs/paper/scene_t2b.sh paw_tool2 1
+t2b_bulb_tool_s1	logs/paper/scene_t2b.sh bulb_tool 1
+t2b_cantaloupes_s1	logs/paper/scene_t2b.sh cantaloupes 1
+t2b_tennis_s1	logs/paper/scene_t2b.sh tennis 1
+chainA_paw_tool1	logs/paper/chain.sh paw_tool1
+# 11/27 12:00 user: seed 0 turn 1 must also use a small force -> replaced t2b_*_s0 / v2_*_s0 by full v2 runs (turn 1 regenerated: camera static, goal force 150)
+v2full_cantaloupes_s0	logs/paper/scene_t2b.sh cantaloupes 0 v2
+v2full_pendulum_s0	logs/paper/scene_t2b.sh pendulum 0 v2
+v2full_paw_tool1_s0	logs/paper/scene_t2b.sh paw_tool1 0 v2
+v2full_toycar_s0	logs/paper/scene_t2b.sh toycar 0 v2
+v2full_soccer_tool_s0	logs/paper/scene_t2b.sh soccer_tool 0 v2
+v2full_paw_tool3_s0	logs/paper/scene_t2b.sh paw_tool3 0 v2
+v2full_paw_tool2_s0	logs/paper/scene_t2b.sh paw_tool2 0 v2
+v2full_bulb_tool_s0	logs/paper/scene_t2b.sh bulb_tool 0 v2
+v2full_tennis_s0	logs/paper/scene_t2b.sh tennis 0 v2
+v2full_pool_tool_s0	logs/paper/scene_t2b.sh pool_tool 0 v2
+v2full_golf_s0	logs/paper/scene_t2b.sh golf 0 v2
+v2full_ballthendominos_s0	logs/paper/scene_t2b.sh ballthendominos 0 v2
+#t2b_cantaloupes_s0	logs/paper/scene_t2b.sh cantaloupes 0
+#t2b_pendulum_s0	logs/paper/scene_t2b.sh pendulum 0
+#t2b_paw_tool1_s0	logs/paper/scene_t2b.sh paw_tool1 0
+#t2b_toycar_s0	logs/paper/scene_t2b.sh toycar 0
+#t2b_soccer_tool_s0	logs/paper/scene_t2b.sh soccer_tool 0
+#t2b_paw_tool3_s0	logs/paper/scene_t2b.sh paw_tool3 0
+#t2b_paw_tool2_s0	logs/paper/scene_t2b.sh paw_tool2 0
+#t2b_bulb_tool_s0	logs/paper/scene_t2b.sh bulb_tool 0
+#t2b_tennis_s0	logs/paper/scene_t2b.sh tennis 0
+#v2_pool_tool_s0	logs/paper/v2_if_needed.sh pool_tool 0
+#v2_tennis_s0	logs/paper/v2_if_needed.sh tennis 0
+#v2_golf_s0	logs/paper/v2_if_needed.sh golf 0
+#v2_cantaloupes_s0	logs/paper/v2_if_needed.sh cantaloupes 0
+#v2_pendulum_s0	logs/paper/v2_if_needed.sh pendulum 0
+#v2_paw_tool1_s0	logs/paper/v2_if_needed.sh paw_tool1 0
+#v2_toycar_s0	logs/paper/v2_if_needed.sh toycar 0
+#v2_soccer_tool_s0	logs/paper/v2_if_needed.sh soccer_tool 0
+#v2_paw_tool3_s0	logs/paper/v2_if_needed.sh paw_tool3 0
+#v2_paw_tool2_s0	logs/paper/v2_if_needed.sh paw_tool2 0
+#v2_bulb_tool_s0	logs/paper/v2_if_needed.sh bulb_tool 0
+# 11/27 12:05 user: stop after the seed-0 low-force runs (moving to another machine) -> v2_*_s1 and chainA_pool_tool not run
+#v2_pool_tool_s1	logs/paper/v2_if_needed.sh pool_tool 1
+#v2_tennis_s1	logs/paper/v2_if_needed.sh tennis 1
+#v2_golf_s1	logs/paper/v2_if_needed.sh golf 1
+#v2_cantaloupes_s1	logs/paper/v2_if_needed.sh cantaloupes 1
+#v2_pendulum_s1	logs/paper/v2_if_needed.sh pendulum 1
+#v2_paw_tool1_s1	logs/paper/v2_if_needed.sh paw_tool1 1
+#v2_toycar_s1	logs/paper/v2_if_needed.sh toycar 1
+#v2_soccer_tool_s1	logs/paper/v2_if_needed.sh soccer_tool 1
+#v2_paw_tool3_s1	logs/paper/v2_if_needed.sh paw_tool3 1
+#v2_paw_tool2_s1	logs/paper/v2_if_needed.sh paw_tool2 1
+#v2_bulb_tool_s1	logs/paper/v2_if_needed.sh bulb_tool 1
+review_videos	imagegen/venv/bin/python -I multiturn/paper_review.py
+#chainA_pool_tool	logs/paper/chain.sh pool_tool

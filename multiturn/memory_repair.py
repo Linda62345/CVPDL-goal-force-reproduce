@@ -23,6 +23,7 @@ what the memory contributes:
 Output: <out>/<cond>.mp4 (+ inputs, meta). Skips if the output exists.
 """
 import argparse
+import sys
 import json
 import time
 from pathlib import Path
@@ -200,7 +201,8 @@ def main():
     ap.add_argument("--track", required=True, help="dir with masks.npz/state.json of this video (stride 1)")
     ap.add_argument("--prev_state", required=True)
     ap.add_argument("--target", required=True)
-    ap.add_argument("--cond", choices=["appearance", "full", "appearance_global"], required=True)
+    ap.add_argument("--cond", choices=["appearance", "full", "appearance_global", "lora", "nolora", "lora_orig"], required=True)
+    ap.add_argument("--lora", default=None, help="LoRA weights (train_vace_lora.py) for --cond lora")
     ap.add_argument("--out", required=True)
     ap.add_argument("--prompt", required=True)
     ap.add_argument("--seed", type=int, default=0)
@@ -232,6 +234,22 @@ def main():
     comp, gray, edit, ref_app, ref_full, trust = build(frames, masks, prev_last, pml, memory, mem_dir, args.target, rlat)
     src = comp if args.cond == "full" else gray
     ref = ref_full if args.cond == "full" else ref_app
+    if args.cond in ("lora", "nolora", "lora_orig"):
+        # lora_plan.md: NO state rule (motion/pose = Goal Force). Source = current pixels colour-matched to memory,
+        # edit mask = dilated tracked masks only, reference = latest-state crops at their latest places.
+        k = np.ones((DIL, DIL), np.uint8)
+        edit = np.zeros(frames.shape[:3], bool)
+        src = frames.copy()
+        for n, m in masks.items():
+            mc = np.array(Image.open(mem_dir / memory[n]["crop"]).convert("RGB"))
+            mem_pix = mc[(mc < 250).any(-1)]
+            for t in range(KEEP_FIRST, len(frames)):
+                if m[t].sum() >= 30:
+                    src[t][m[t]] = color_match(frames[t][m[t]], mem_pix)
+                    edit[t] |= cv2.dilate(m[t].astype(np.uint8), k) > 0
+        # lora/nolora: reference = latest-state crops. lora_orig: reference = ORIGINAL turn-1 crops (appearance memory);
+        # the LoRA was trained to take appearance from a reference in a different pose without copying the pose.
+        ref = ref_app if args.cond == "lora_orig" else ref_full
     if args.cond == "appearance_global":
         # diagnostic only (chips no-force control): the WHOLE frame may be re-rendered (after KEEP_FIRST), the source
         # video is kept as context (not grayed), and the reference is the original crop at its ORIGINAL place.
@@ -261,7 +279,12 @@ def main():
                        ModelConfig(path=f"{M}/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth"),
                        ModelConfig(path=f"{M}/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth")],
         tokenizer_config=ModelConfig(path=f"{M}/Wan2.1-T2V-1.3B/google/umt5-xxl"))
-    pipe.enable_vram_management()
+    if args.cond in ("lora", "lora_orig"):
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from lora_utils import load_lora
+        print("LoRA tensors loaded:", load_lora(pipe, args.lora))
+    if args.cond not in ("lora", "nolora", "lora_orig"):  # peft LoRA layers are not handled by DiffSynth's VRAM wrappers; both
+        pipe.enable_vram_management()        # lora/nolora run fully on GPU so the pair stays comparable
     T, H, W, _ = frames.shape
     T = (T - 1) // 4 * 4 + 1
     t0 = time.time()
