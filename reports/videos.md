@@ -62,7 +62,30 @@
 | s1_B_seed1 | [paper_ballthendominos_s1_B_seed1.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/paper_ballthendominos_s1_B_seed1.mp4?raw=true) |
 | s1_B_seed2 | [paper_ballthendominos_s1_B_seed2.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/paper_ballthendominos_s1_B_seed2.mp4?raw=true) |
 
+## 4. 新版兩回合：照論文的因果寫法（`t2c_v2_*`，11/27）
+
+第 1 回合：原論文 prompt + The camera is static.，力道 150。第 2 回合：goal 模式，文字寫明誰造成動作。格式同第 2 節。
+
+| 場景 | 影片 | 看什麼 |
+|---|---|---|
+| 哈密瓜 | [t2c_v2_cantaloupes_s0.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/t2c_v2_cantaloupes_s0.mp4?raw=true) | 右瓜撞回左瓜，左瓜被撞往左：**因果正確**；但瓜已開始變黃、變橢圓 |
+| 鐘擺 | [t2c_v2_pendulum_s0.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/t2c_v2_pendulum_s0.mp4?raw=true) | 第 1 回合撞倒方塊；第 2 回合方塊在桌子最右邊，**鐘擺搆不到**，方塊沒動（模型沒有硬讓它動） |
+
+其他場景今晚跑完後補上。
+
+## 5. seed 1 互撞版（`t2b_*`，direct 模式，力道 100–150；舊寫法，可和第 4 節對照）
+
+| 場景 | 影片 |
+|---|---|
+| 燈泡 | [t2b_bulb_tool_s1.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/t2b_bulb_tool_s1.mp4?raw=true) |
+| 哈密瓜 | [t2b_cantaloupes_s1.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/t2b_cantaloupes_s1.mp4?raw=true) |
+| 西洋棋（狗） | [t2b_paw_tool1_s1.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/t2b_paw_tool1_s1.mp4?raw=true) |
+| 藍球（狗） | [t2b_paw_tool2_s1.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/t2b_paw_tool2_s1.mp4?raw=true) |
+| 紅球（貓） | [t2b_paw_tool3_s1.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/t2b_paw_tool3_s1.mp4?raw=true) |
+| 鐘擺 | [t2b_pendulum_s1.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/t2b_pendulum_s1.mp4?raw=true) |
+| 足球 | [t2b_soccer_tool_s1.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/t2b_soccer_tool_s1.mp4?raw=true) |
+| 網球 | [t2b_tennis_s1.mp4](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/t2b_tennis_s1.mp4?raw=true) |
+
 ## 之後會補上
 
-- `t2b_*`：seed 1 互撞版第 2 回合（direct 模式、力道 100–150）
-- `t2c_v2_*`：今晚跑的新版，第 1 回合鏡頭固定、力道 150，第 2 回合照論文用 goal 模式並在文字寫明原因（手、爪子、球桿、另一顆球），含骨牌「再推倒其他骨牌」
+- 其餘 `t2c_v2_*`：今晚跑的新版，第 1 回合鏡頭固定、力道 150，第 2 回合照論文用 goal 模式並在文字寫明原因（手、爪子、球桿、另一顆球），含骨牌「再推倒其他骨牌」
