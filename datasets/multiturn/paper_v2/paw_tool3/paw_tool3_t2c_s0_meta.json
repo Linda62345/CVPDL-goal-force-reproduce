@@ -1,0 +1,22 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper_v2/paw_tool3/t1_s0/state.json",
+ "target": "ball",
+ "mode": "goal",
+ "point_topleft": [
+  228.99273997331449,
+  275.5895141668629
+ ],
+ "point_csv": [
+  229,
+  204
+ ],
+ "projectile": "ball",
+ "projectile_topleft": [
+  228.99273997331449,
+  275.5895141668629
+ ],
+ "angle": 11.0,
+ "force": 100.0,
+ "caption": "A cat's paw reaches out and nudges the red ball again, causing it to roll across the grass. The camera is static.",
+ "prev_turn": 1
+}

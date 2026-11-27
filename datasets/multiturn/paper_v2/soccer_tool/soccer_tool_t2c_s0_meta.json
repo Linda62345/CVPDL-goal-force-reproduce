@@ -1,0 +1,22 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper_v2/soccer_tool/t1_s0/state.json",
+ "target": "ball",
+ "mode": "goal",
+ "point_topleft": [
+  74.52498957526657,
+  243.84202061118722
+ ],
+ "point_csv": [
+  75,
+  236
+ ],
+ "projectile": "ball",
+ "projectile_topleft": [
+  74.52498957526657,
+  243.84202061118722
+ ],
+ "angle": 1.0,
+ "force": 100.0,
+ "caption": "The player's foot kicks the soccer ball again, and it rolls across the field. The camera is static.",
+ "prev_turn": 1
+}

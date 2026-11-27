@@ -1,0 +1,2 @@
+image,projectile_force_angle,projectile_force_magnitude,projectile_coordx,projectile_coordy,projectile_mass,target_indirect_force_angle,target_indirect_force_magnitude,target_coordx,target_coordy,target_mass,width,height,caption
+toycar_t2c_s0.png,-1.0,-1.0,122,34,-1,35.0,100.0,122,34,-1,832,480,"A hand reaches out and pushes the toy car again, and the car travels across the map. The camera is static."

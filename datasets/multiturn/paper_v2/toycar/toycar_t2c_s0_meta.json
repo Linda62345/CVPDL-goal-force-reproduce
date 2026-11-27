@@ -1,0 +1,22 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper_v2/toycar/t1_s0/state.json",
+ "target": "car",
+ "mode": "goal",
+ "point_topleft": [
+  121.70501239107843,
+  446.45343352785994
+ ],
+ "point_csv": [
+  122,
+  34
+ ],
+ "projectile": "car",
+ "projectile_topleft": [
+  121.70501239107843,
+  446.45343352785994
+ ],
+ "angle": 35.0,
+ "force": 100.0,
+ "caption": "A hand reaches out and pushes the toy car again, and the car travels across the map. The camera is static.",
+ "prev_turn": 1
+}

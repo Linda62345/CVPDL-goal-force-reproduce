@@ -88,7 +88,7 @@ def main():
                 row(c, f"2（{json.load(open(ROOT / str(c).replace('.csv', '_meta.json'))).get('projectile', '')} → {meta_target(c)}）"), ""]
     rest = [s for s in SC if not s.startswith("_") and "turn2c" in SC[s] and s not in done_c]
     if rest:
-        out += ["還沒跑到的場景（設定見 `multiturn/paper_scenes.json` 的 turn2c；`away` = 從造成者指向被推物體的方向，實際角度要等第 1 回合追蹤完才算得出來）：", "",
+        out += ["沒有第 2 回合的場景（11/27 seed 0：第 1 回合後要推的物體已不在畫面裡，所以跳過；設定見 `multiturn/paper_scenes.json` 的 turn2c；`away` = 從造成者指向被推物體的方向，實際角度要等第 1 回合追蹤完才算得出來）：", "",
                 "| 場景 | 誰造成 → 誰被推 | 角度 | 力道 | 第 2 回合文字 prompt |", "|---|---|---|---|---|"]
         for s in rest:
             t = SC[s]["turn2c"]

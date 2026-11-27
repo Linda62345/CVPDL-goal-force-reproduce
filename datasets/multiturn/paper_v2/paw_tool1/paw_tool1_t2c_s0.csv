@@ -1,0 +1,2 @@
+image,projectile_force_angle,projectile_force_magnitude,projectile_coordx,projectile_coordy,projectile_mass,target_indirect_force_angle,target_indirect_force_magnitude,target_coordx,target_coordy,target_mass,width,height,caption
+paw_tool1_t2c_s0.png,-1.0,-1.0,826,25,-1,161.0,100.0,479,143,-1,832,480,"The dog's paw nudges the chess piece again, and it slides into another chess piece, knocking it over. The camera is static."

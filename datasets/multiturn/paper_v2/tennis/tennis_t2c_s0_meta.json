@@ -1,0 +1,22 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper_v2/tennis/t1_s0/state.json",
+ "target": "ball_right",
+ "mode": "goal",
+ "point_topleft": [
+  489.6741118536757,
+  201.71544143510377
+ ],
+ "point_csv": [
+  490,
+  278
+ ],
+ "projectile": "ball_bottom",
+ "projectile_topleft": [
+  476.36511375948,
+  378.7980188825259
+ ],
+ "angle": 86.0,
+ "force": 120.0,
+ "caption": "A tennis ball rolls across the court, colliding with another ball. The camera is static.",
+ "prev_turn": 1
+}

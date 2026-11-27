@@ -24,6 +24,13 @@ NOTES = {  # what to look at (filled in after watching)
     "A_5turns_chess_dogpaw.mp4": "**物體消失／出現**：黑棋第 3 回合起消失或被推出棋盤，第 5 回合又冒出；棋盤和狗爪穩定",
     "B_2turns_causal_lowforce_cantaloupes_seed0.mp4": "右瓜撞回左瓜、左瓜被撞往左：**因果正確**；但瓜已開始變黃、變橢圓",
     "B_2turns_causal_lowforce_pendulum_seed0.mp4": "第 1 回合撞倒方塊；第 2 回合方塊在最右邊，**鐘擺搆不到**，方塊沒動",
+    "B_2turns_causal_lowforce_dominoes_seed0.mp4": "第 2 回合後排骨牌**一路連鎖倒下**、拱門也塌一角：目標達成；但沒畫出手，倒下的骨牌有幾塊散飛",
+    "B_2turns_causal_lowforce_soccer_kick_seed0.mp4": "第 2 回合**腳踢球、球往右滾回腳邊：因果正確**；第 1 回合球自己往左滾（只閃過一隻光腳）",
+    "B_2turns_causal_lowforce_chess_dogpaw_seed0.mp4": "第 1 回合一顆棋子被撥出棋盤到角落；第 2 回合原本要角落那顆白兵去撞白象，結果是**狗爪再伸進來**把中間白棋撥倒，角落的兵沒動",
+    "B_2turns_causal_lowforce_toycar_hand_seed0.mp4": "第 1 回合手推車往左下；第 2 回合**沒有手**，車自己往右上開、**開出畫面**",
+    "B_2turns_causal_lowforce_ball_catpaw_seed0.mp4": "第 2 回合貓爪伸過來拍球（**因果有畫出來**），但球往右滾後**從畫面消失**",
+    "B_2turns_causal_lowforce_ball_dogpaw_seed0.mp4": "第 2 回合**狗爪沒碰到球**，球自己慢慢往右再往上滾到狗旁邊",
+    "B_2turns_causal_lowforce_tennis_seed0.mp4": "第 2 回合要下面那顆球往上撞右邊的球，結果**下面的球沒動**，反而左上那群球亂動、有球**消失**（物體數量不守恆）",
     "D_2turns_firstdesign_bulbs_hand_seed0_INVALID.mp4": "**作廢**：追蹤把兩個燈泡當成同一個，力推在錯的燈泡上",
 }
 

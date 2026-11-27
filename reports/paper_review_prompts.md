@@ -32,6 +32,13 @@
 
 第 1 回合 = 原論文 CSV + 「The camera is static.」，goal 力道 150；第 2 回合 = goal 模式，文字寫明原因。
 
+### 骨牌 — [`B_2turns_causal_lowforce_dominoes_seed0.mp4`](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/B_2turns_causal_lowforce_dominoes_seed0.mp4?raw=true)　<sub>原檔 `t2c_v2_ballthendominos_s0.mp4`</sub>
+
+| 回合 | 模式 | 施力點（CSV 座標，左下角原點） | 角度 | 力道 | 文字 prompt |
+|---|---|---|---|---|---|
+| 1 | goal | 擊球者 (241, 104) → 目標 (356, 112) | 5° | 150 | One pool ball hits the other, which then hits the first domino, triggering a chain reaction. The camera is static. |
+| 2（domino_back → domino_back） | goal | 擊球者 (391, 222) → 目標 (391, 222) | 0° | 100 | A hand pushes a standing domino in the back row, and the dominoes next to it fall over one after another. The camera is static. |
+
 ### 哈密瓜 — [`B_2turns_causal_lowforce_cantaloupes_seed0.mp4`](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/B_2turns_causal_lowforce_cantaloupes_seed0.mp4?raw=true)　<sub>原檔 `t2c_v2_cantaloupes_s0.mp4`</sub>
 
 | 回合 | 模式 | 施力點（CSV 座標，左下角原點） | 角度 | 力道 | 文字 prompt |
@@ -39,12 +46,26 @@
 | 1 | goal | 擊球者 (326, 175) → 目標 (594, 163) | 0° | 150 | A cantaloupe rolls across the surface, colliding with another cantaloupe. The camera is static. |
 | 2（melon_right → melon_left） | goal | 擊球者 (799, 125) → 目標 (519, 146) | 176° | 150 | A cantaloupe rolls back across the surface, colliding with the other cantaloupe and pushing it away. The camera is static. |
 
-### 西洋棋（狗） — `B_2turns_causal_lowforce_chess_dogpaw_seed0.mp4`（尚未產生）　<sub>原檔 `t2c_v2_paw_tool1_s0.mp4`</sub>
+### 西洋棋（狗） — [`B_2turns_causal_lowforce_chess_dogpaw_seed0.mp4`](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/B_2turns_causal_lowforce_chess_dogpaw_seed0.mp4?raw=true)　<sub>原檔 `t2c_v2_paw_tool1_s0.mp4`</sub>
 
 | 回合 | 模式 | 施力點（CSV 座標，左下角原點） | 角度 | 力道 | 文字 prompt |
 |---|---|---|---|---|---|
 | 1 | goal | 擊球者 (513, 201) → 目標 (513, 201) | 335° | 150 | A dog paw nudges a chess piece, causing it to slide across the board. The camera is static. |
 | 2（white_pawn_target → white_bishop） | goal | 擊球者 (826, 25) → 目標 (479, 143) | 161° | 100 | The dog's paw nudges the chess piece again, and it slides into another chess piece, knocking it over. The camera is static. |
+
+### 藍球（狗） — [`B_2turns_causal_lowforce_ball_dogpaw_seed0.mp4`](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/B_2turns_causal_lowforce_ball_dogpaw_seed0.mp4?raw=true)　<sub>原檔 `t2c_v2_paw_tool2_s0.mp4`</sub>
+
+| 回合 | 模式 | 施力點（CSV 座標，左下角原點） | 角度 | 力道 | 文字 prompt |
+|---|---|---|---|---|---|
+| 1 | goal | 擊球者 (536, 102) → 目標 (536, 102) | 135° | 150 | A dog nudges a ball with its paw, causing it to roll on the ground. The camera is static. |
+| 2（ball → ball） | goal | 擊球者 (235, 315) → 目標 (235, 315) | 337° | 100 | A dog nudges the blue ball again with its paw, causing it to roll on the ground. The camera is static. |
+
+### 紅球（貓） — [`B_2turns_causal_lowforce_ball_catpaw_seed0.mp4`](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/B_2turns_causal_lowforce_ball_catpaw_seed0.mp4?raw=true)　<sub>原檔 `t2c_v2_paw_tool3_s0.mp4`</sub>
+
+| 回合 | 模式 | 施力點（CSV 座標，左下角原點） | 角度 | 力道 | 文字 prompt |
+|---|---|---|---|---|---|
+| 1 | goal | 擊球者 (480, 214) → 目標 (482, 214) | 180° | 150 | A cat's paw nudges a ball, causing it to roll across the grass. The camera is static. |
+| 2（ball → ball） | goal | 擊球者 (229, 204) → 目標 (229, 204) | 11° | 100 | A cat's paw reaches out and nudges the red ball again, causing it to roll across the grass. The camera is static. |
 
 ### 鐘擺 — [`B_2turns_causal_lowforce_pendulum_seed0.mp4`](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/B_2turns_causal_lowforce_pendulum_seed0.mp4?raw=true)　<sub>原檔 `t2c_v2_pendulum_s0.mp4`</sub>
 
@@ -53,19 +74,34 @@
 | 1 | goal | 擊球者 (368, 108) → 目標 (545, 114) | 0° | 150 | The pendulum swings, striking and toppling the red block. The camera is static. |
 | 2（bob → red_block） | goal | 擊球者 (390, 109) → 目標 (743, 52) | 351° | 150 | The pendulum swings again, striking the fallen red block and pushing it across the table. The camera is static. |
 
-還沒跑到的場景（設定見 `multiturn/paper_scenes.json` 的 turn2c；`away` = 從造成者指向被推物體的方向，實際角度要等第 1 回合追蹤完才算得出來）：
+### 足球 — [`B_2turns_causal_lowforce_soccer_kick_seed0.mp4`](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/B_2turns_causal_lowforce_soccer_kick_seed0.mp4?raw=true)　<sub>原檔 `t2c_v2_soccer_tool_s0.mp4`</sub>
+
+| 回合 | 模式 | 施力點（CSV 座標，左下角原點） | 角度 | 力道 | 文字 prompt |
+|---|---|---|---|---|---|
+| 1 | goal | 擊球者 (477, 234) → 目標 (477, 236) | 180° | 150 | A soccer ball is kicked and rolls across the field. The camera is static. |
+| 2（ball → ball） | goal | 擊球者 (75, 236) → 目標 (75, 236) | 1° | 100 | The player's foot kicks the soccer ball again, and it rolls across the field. The camera is static. |
+
+### 網球 — [`B_2turns_causal_lowforce_tennis_seed0.mp4`](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/B_2turns_causal_lowforce_tennis_seed0.mp4?raw=true)　<sub>原檔 `t2c_v2_tennis_s0.mp4`</sub>
+
+| 回合 | 模式 | 施力點（CSV 座標，左下角原點） | 角度 | 力道 | 文字 prompt |
+|---|---|---|---|---|---|
+| 1 | goal | 擊球者 (781, 336) → 目標 (469, 307) | 175° | 150 | A tennis ball rolls across the court, colliding with another ball. The camera is static. |
+| 2（ball_bottom → ball_right） | goal | 擊球者 (476, 101) → 目標 (490, 278) | 86° | 120 | A tennis ball rolls across the court, colliding with another ball. The camera is static. |
+
+### 玩具車 — [`B_2turns_causal_lowforce_toycar_hand_seed0.mp4`](https://github.com/Linda62345/CVPDL-goal-force-reproduce/blob/appearance-multiturn/reports/videos/B_2turns_causal_lowforce_toycar_hand_seed0.mp4?raw=true)　<sub>原檔 `t2c_v2_toycar_s0.mp4`</sub>
+
+| 回合 | 模式 | 施力點（CSV 座標，左下角原點） | 角度 | 力道 | 文字 prompt |
+|---|---|---|---|---|---|
+| 1 | goal | 擊球者 (660, 286) → 目標 (660, 286) | 225° | 150 | A hand reaches out to push the car across a map, and the car travels over various countries and regions. The camera is static. |
+| 2（car → car） | goal | 擊球者 (122, 34) → 目標 (122, 34) | 35° | 100 | A hand reaches out and pushes the toy car again, and the car travels across the map. The camera is static. |
+
+沒有第 2 回合的場景（11/27 seed 0：第 1 回合後要推的物體已不在畫面裡，所以跳過；設定見 `multiturn/paper_scenes.json` 的 turn2c；`away` = 從造成者指向被推物體的方向，實際角度要等第 1 回合追蹤完才算得出來）：
 
 | 場景 | 誰造成 → 誰被推 | 角度 | 力道 | 第 2 回合文字 prompt |
 |---|---|---|---|---|
 | 撞球 | yellow_ball → white_ball | away | 120 | A cue stick strikes the yellow pool ball, which rolls and hits the white ball. The camera is static. |
-| 網球 | ball_bottom → nearest | away | 120 | A tennis ball rolls across the court, colliding with another ball. The camera is static. |
 | 高爾夫 | yellow_ball → white_ball | away | 120 | A golf club hits the yellow golf ball, which rolls into the white golf ball. The camera is static. |
-| 玩具車 | car → car | toward:center | 100 | A hand reaches out and pushes the toy car again, and the car travels across the map. The camera is static. |
-| 足球 | ball → ball | toward:center | 100 | The player's foot kicks the soccer ball again, and it rolls across the field. The camera is static. |
-| 藍球（狗） | ball → ball | toward:center | 100 | A dog nudges the blue ball again with its paw, causing it to roll on the ground. The camera is static. |
-| 紅球（貓） | ball → ball | toward:center | 100 | A cat's paw reaches out and nudges the red ball again, causing it to roll across the grass. The camera is static. |
 | 燈泡 | bulb_right → bulb_left | away | 200 | A hand pushes the right bulb, causing it to swing and hit the other bulb. The camera is static. |
-| 骨牌 | domino_back → domino_back | 0 | 100 | A hand pushes a standing domino in the back row, and the dominoes next to it fall over one after another. The camera is static. |
 
 ## C. 互撞版兩回合（turn2b，direct 模式）
 

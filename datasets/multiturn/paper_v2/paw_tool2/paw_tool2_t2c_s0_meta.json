@@ -1,0 +1,22 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper_v2/paw_tool2/t1_s0/state.json",
+ "target": "ball",
+ "mode": "goal",
+ "point_topleft": [
+  235.08040826487428,
+  164.84963903410505
+ ],
+ "point_csv": [
+  235,
+  315
+ ],
+ "projectile": "ball",
+ "projectile_topleft": [
+  235.08040826487428,
+  164.84963903410505
+ ],
+ "angle": 337.0,
+ "force": 100.0,
+ "caption": "A dog nudges the blue ball again with its paw, causing it to roll on the ground. The camera is static.",
+ "prev_turn": 1
+}

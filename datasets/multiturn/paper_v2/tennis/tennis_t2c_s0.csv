@@ -1,0 +1,2 @@
+image,projectile_force_angle,projectile_force_magnitude,projectile_coordx,projectile_coordy,projectile_mass,target_indirect_force_angle,target_indirect_force_magnitude,target_coordx,target_coordy,target_mass,width,height,caption
+tennis_t2c_s0.png,-1.0,-1.0,476,101,-1,86.0,120.0,490,278,-1,832,480,"A tennis ball rolls across the court, colliding with another ball. The camera is static."

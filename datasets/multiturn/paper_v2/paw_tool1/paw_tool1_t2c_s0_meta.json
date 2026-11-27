@@ -1,0 +1,22 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper_v2/paw_tool1/t1_s0/state.json",
+ "target": "white_bishop",
+ "mode": "goal",
+ "point_topleft": [
+  478.5847393603626,
+  337.28934777134225
+ ],
+ "point_csv": [
+  479,
+  143
+ ],
+ "projectile": "white_pawn_target",
+ "projectile_topleft": [
+  826.0297239915075,
+  455.35881104033973
+ ],
+ "angle": 161.0,
+ "force": 100.0,
+ "caption": "The dog's paw nudges the chess piece again, and it slides into another chess piece, knocking it over. The camera is static.",
+ "prev_turn": 1
+}

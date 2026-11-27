@@ -1,0 +1,22 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper_v2/ballthendominos/t1_s0/state.json",
+ "target": "domino_back",
+ "mode": "goal",
+ "point_topleft": [
+  391.3,
+  258.065873015873
+ ],
+ "point_csv": [
+  391,
+  222
+ ],
+ "projectile": "domino_back",
+ "projectile_topleft": [
+  391.3,
+  258.065873015873
+ ],
+ "angle": 0.0,
+ "force": 100.0,
+ "caption": "A hand pushes a standing domino in the back row, and the dominoes next to it fall over one after another. The camera is static.",
+ "prev_turn": 1
+}
