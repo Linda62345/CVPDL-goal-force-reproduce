@@ -84,4 +84,5 @@ v2c_ballthendominos_s0	logs/paper/scene_t2c.sh ballthendominos 0 v2
 #v2_paw_tool2_s1	logs/paper/v2_if_needed.sh paw_tool2 1
 #v2_bulb_tool_s1	logs/paper/v2_if_needed.sh bulb_tool 1
 review_videos	imagegen/venv/bin/python -I multiturn/paper_review.py
+publish_videos	venv/bin/python -I multiturn/publish_videos.py && venv/bin/python -I multiturn/prompt_table.py
 #chainA_pool_tool	logs/paper/chain.sh pool_tool
