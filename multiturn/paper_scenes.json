@@ -1,0 +1,691 @@
+{
+ "_doc": "Two-turn experiment on the paper's example photos (multiturn/paper_photos_plan.md). turn1 = the paper's own CSV, unchanged. prompts = SAM2 clicks on the turn-1 input image, TOP-LEFT px (832x480). turn2 = direct force on a tracked object; the force point is that object's centroid in the turn-1 last frame. turn2_fallback: used in order when the turn2 target is not visible in the turn-1 last frame (recorded in t2_choice.json). turn2b (11/27): collision / push-again version of turn 2; angle may be 'toward:<obj>' / 'toward:nearest' / 'toward:center' (direction from the target's turn-1-end centroid). turn2b force per scene (11/27): 100 for single objects and close chess pieces, 120 balls, 150 when the other object is far (cantaloupes, pendulum), bulb kept at 200 (moved only 3 px at 200). 11/27 12:30: added ballthendominos (dominoes photo, previously run 11/25 as exp8/exp10 with turn-2 force 350); turn2b = push a standing back-row domino to the right (force 100) so the other dominoes fall (user request 11/27 12:40). 11/27 13:00 turn2c (user: follow the paper's causality): GOAL mode like every paper example. projectile = the object/agent that causes the motion (its centroid is the CSV projectile point), target = the object that must move (goal force on its centroid); projectile == target for hand/paw/foot scenes (agent off-screen, as in the paper). target 'nearest' = nearest visible object to the projectile; angle 'away' = direction projectile -> target; 'toward:center' = target -> image centre. Captions name the cause.",
+ "pool_tool": {
+  "csv": "datasets/examples/tool-object-interaction/_pool_tool_obj1_prompt1.csv",
+  "prompts": {
+   "white_ball": [
+    [
+     177,
+     276
+    ]
+   ],
+   "yellow_ball": [
+    [
+     350,
+     272
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "yellow_ball",
+   "angle": 180,
+   "force": 200,
+   "caption": "The yellow pool ball rolls to the left and hits the white ball. The camera is static."
+  },
+  "turn2_fallback": [
+   {
+    "target": "white_ball",
+    "angle": 0,
+    "caption": "The white pool ball rolls to the right across the table. The camera is static."
+   }
+  ],
+  "turn2b": {
+   "target": "yellow_ball",
+   "angle": "toward:white_ball",
+   "force": 120,
+   "caption": "The yellow pool ball rolls and hits the white ball. The camera is static."
+  },
+  "turn2b_fallback": [
+   {
+    "target": "white_ball",
+    "angle": "toward:yellow_ball",
+    "caption": "The white pool ball rolls and hits the yellow ball. The camera is static."
+   }
+  ],
+  "turn2c": {
+   "projectile": "yellow_ball",
+   "target": "white_ball",
+   "angle": "away",
+   "force": 120,
+   "caption": "A cue stick strikes the yellow pool ball, which rolls and hits the white ball. The camera is static."
+  },
+  "turn2c_fallback": [
+   {
+    "projectile": "white_ball",
+    "target": "yellow_ball",
+    "angle": "away",
+    "caption": "A cue stick strikes the white pool ball, which rolls and hits the yellow ball. The camera is static."
+   }
+  ]
+ },
+ "tennis": {
+  "csv": "datasets/examples/multi-object-collision/_tennis_obj1_prompt1.csv",
+  "prompts": {
+   "ball_topleft_a": [
+    [
+     192,
+     100
+    ]
+   ],
+   "ball_topleft_b": [
+    [
+     238,
+     158
+    ]
+   ],
+   "ball_line": [
+    [
+     472,
+     170
+    ]
+   ],
+   "ball_right": [
+    [
+     783,
+     142
+    ]
+   ],
+   "ball_bottom": [
+    [
+     476,
+     377
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "ball_topleft_b",
+   "angle": 0,
+   "force": 200,
+   "caption": "A tennis ball rolls to the right across the court. The camera is static."
+  },
+  "turn2_fallback": [
+   {
+    "target": "ball_bottom",
+    "angle": 0,
+    "caption": "A tennis ball rolls to the right across the court. The camera is static."
+   },
+   {
+    "target": "ball_topleft_a",
+    "angle": 0,
+    "caption": "A tennis ball rolls to the right across the court. The camera is static."
+   },
+   {
+    "target": "ball_line",
+    "angle": 0,
+    "caption": "A tennis ball rolls to the right across the court. The camera is static."
+   }
+  ],
+  "turn2b": {
+   "target": "ball_bottom",
+   "angle": "toward:nearest",
+   "force": 120,
+   "caption": "A tennis ball rolls across the court and hits another tennis ball. The camera is static."
+  },
+  "turn2b_fallback": [
+   {
+    "target": "ball_line",
+    "angle": "toward:nearest",
+    "caption": "A tennis ball rolls across the court and hits another tennis ball. The camera is static."
+   },
+   {
+    "target": "ball_topleft_a",
+    "angle": "toward:nearest",
+    "caption": "A tennis ball rolls across the court and hits another tennis ball. The camera is static."
+   }
+  ],
+  "turn2c": {
+   "projectile": "ball_bottom",
+   "target": "nearest",
+   "angle": "away",
+   "force": 120,
+   "caption": "A tennis ball rolls across the court, colliding with another ball. The camera is static."
+  },
+  "turn2c_fallback": [
+   {
+    "projectile": "ball_line",
+    "target": "nearest",
+    "angle": "away",
+    "caption": "A tennis ball rolls across the court, colliding with another ball. The camera is static."
+   },
+   {
+    "projectile": "ball_topleft_a",
+    "target": "nearest",
+    "angle": "away",
+    "caption": "A tennis ball rolls across the court, colliding with another ball. The camera is static."
+   }
+  ]
+ },
+ "golf": {
+  "csv": "datasets/examples/tool-object-interaction/_golf_obj1_prompt1.csv",
+  "prompts": {
+   "white_ball": [
+    [
+     196,
+     278
+    ]
+   ],
+   "yellow_ball": [
+    [
+     460,
+     284
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "yellow_ball",
+   "angle": 180,
+   "force": 200,
+   "caption": "The yellow golf ball rolls to the left and hits the white golf ball. The camera is static."
+  },
+  "turn2_fallback": [
+   {
+    "target": "white_ball",
+    "angle": 0,
+    "caption": "The white golf ball rolls to the right across the grass. The camera is static."
+   }
+  ],
+  "turn2b": {
+   "target": "yellow_ball",
+   "angle": "toward:white_ball",
+   "force": 120,
+   "caption": "The yellow golf ball rolls and hits the white golf ball. The camera is static."
+  },
+  "turn2b_fallback": [
+   {
+    "target": "white_ball",
+    "angle": "toward:yellow_ball",
+    "caption": "The white golf ball rolls and hits the yellow golf ball. The camera is static."
+   }
+  ],
+  "turn2c": {
+   "projectile": "yellow_ball",
+   "target": "white_ball",
+   "angle": "away",
+   "force": 120,
+   "caption": "A golf club hits the yellow golf ball, which rolls into the white golf ball. The camera is static."
+  },
+  "turn2c_fallback": [
+   {
+    "projectile": "white_ball",
+    "target": "yellow_ball",
+    "angle": "away",
+    "caption": "A golf club hits the white golf ball, which rolls into the yellow golf ball. The camera is static."
+   }
+  ]
+ },
+ "cantaloupes": {
+  "csv": "datasets/examples/multi-object-collision/_cantaloupes_obj1_prompt1.csv",
+  "prompts": {
+   "melon_left": [
+    [
+     324,
+     306
+    ]
+   ],
+   "melon_right": [
+    [
+     596,
+     320
+    ]
+   ],
+   "board": [
+    [
+     390,
+     336
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "melon_right",
+   "angle": 180,
+   "force": 200,
+   "caption": "The cantaloupe rolls back to the left across the surface. The camera is static."
+  },
+  "turn2_fallback": [
+   {
+    "target": "melon_left",
+    "angle": 0,
+    "caption": "The cantaloupe rolls to the right across the surface. The camera is static."
+   }
+  ],
+  "turn2b": {
+   "target": "melon_right",
+   "angle": "toward:melon_left",
+   "force": 150,
+   "caption": "The cantaloupe rolls across the surface and bumps into the other cantaloupe. The camera is static."
+  },
+  "turn2b_fallback": [
+   {
+    "target": "melon_left",
+    "angle": "toward:melon_right",
+    "caption": "The cantaloupe rolls across the surface and bumps into the other cantaloupe. The camera is static."
+   }
+  ],
+  "turn2c": {
+   "projectile": "melon_right",
+   "target": "melon_left",
+   "angle": "away",
+   "force": 150,
+   "caption": "A cantaloupe rolls back across the surface, colliding with the other cantaloupe and pushing it away. The camera is static."
+  },
+  "turn2c_fallback": [
+   {
+    "projectile": "melon_left",
+    "target": "melon_right",
+    "angle": "away",
+    "caption": "A cantaloupe rolls across the surface, colliding with the other cantaloupe and pushing it away. The camera is static."
+   }
+  ]
+ },
+ "pendulum": {
+  "csv": "datasets/examples/multi-object-collision/_pendulum_obj1_prompt1.csv",
+  "prompts": {
+   "bob": [
+    [
+     368,
+     378
+    ]
+   ],
+   "red_block": [
+    [
+     548,
+     365
+    ],
+    [
+     548,
+     300
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "red_block",
+   "angle": 180,
+   "force": 200,
+   "caption": "The fallen red block slides to the left across the table. The camera is static."
+  },
+  "turn2_fallback": [
+   {
+    "target": "bob",
+    "angle": 180,
+    "caption": "The pendulum swings to the left. The camera is static."
+   }
+  ],
+  "turn2b": {
+   "target": "bob",
+   "angle": "toward:red_block",
+   "force": 150,
+   "caption": "The pendulum swings again and hits the fallen red block. The camera is static."
+  },
+  "turn2b_fallback": [],
+  "turn2c": {
+   "projectile": "bob",
+   "target": "red_block",
+   "angle": "away",
+   "force": 150,
+   "caption": "The pendulum swings again, striking the fallen red block and pushing it across the table. The camera is static."
+  },
+  "turn2c_fallback": []
+ },
+ "paw_tool1": {
+  "csv": "datasets/examples/animal-object-interaction/_paw_tool1_obj1_prompt1.csv",
+  "prompts": {
+   "white_pawn_target": [
+    [
+     515,
+     278
+    ]
+   ],
+   "dark_bishop": [
+    [
+     258,
+     250
+    ]
+   ],
+   "dark_king": [
+    [
+     248,
+     170
+    ]
+   ],
+   "white_pawn_left": [
+    [
+     208,
+     228
+    ]
+   ],
+   "white_bishop": [
+    [
+     478,
+     340
+    ]
+   ],
+   "white_pawn_bottom": [
+    [
+     315,
+     402
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "dark_bishop",
+   "angle": 0,
+   "force": 200,
+   "caption": "A dark wooden chess piece slides to the right across the board. The camera is static."
+  },
+  "turn2_fallback": [
+   {
+    "target": "white_pawn_bottom",
+    "angle": 0,
+    "caption": "A wooden chess piece slides to the right across the board. The camera is static."
+   },
+   {
+    "target": "white_bishop",
+    "angle": 0,
+    "caption": "A wooden chess piece slides to the right across the board. The camera is static."
+   }
+  ],
+  "turn2b": {
+   "target": "white_pawn_target",
+   "angle": "toward:nearest",
+   "force": 100,
+   "caption": "The dog's paw nudges the chess piece again, and it slides into another chess piece. The camera is static."
+  },
+  "turn2b_fallback": [
+   {
+    "target": "dark_bishop",
+    "angle": "toward:nearest",
+    "caption": "A dark chess piece slides across the board and knocks into another chess piece. The camera is static."
+   }
+  ],
+  "turn2c": {
+   "projectile": "white_pawn_target",
+   "target": "nearest",
+   "angle": "away",
+   "force": 100,
+   "caption": "The dog's paw nudges the chess piece again, and it slides into another chess piece, knocking it over. The camera is static."
+  },
+  "turn2c_fallback": [
+   {
+    "projectile": "dark_bishop",
+    "target": "nearest",
+    "angle": "away",
+    "caption": "A dog paw nudges a dark chess piece, and it slides into another chess piece, knocking it over. The camera is static."
+   }
+  ]
+ },
+ "toycar": {
+  "csv": "datasets/examples/human-object-interaction/_toycar_obj1_prompt1.csv",
+  "prompts": {
+   "car": [
+    [
+     650,
+     205
+    ],
+    [
+     690,
+     175
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "car",
+   "angle": 90,
+   "force": 200,
+   "caption": "The toy car drives upward across the map. The camera is static."
+  },
+  "turn2b": {
+   "target": "car",
+   "angle": "toward:center",
+   "force": 100,
+   "caption": "A hand reaches out and pushes the toy car again across the map. The camera is static."
+  },
+  "turn2b_fallback": [],
+  "turn2c": {
+   "projectile": "car",
+   "target": "car",
+   "angle": "toward:center",
+   "force": 100,
+   "caption": "A hand reaches out and pushes the toy car again, and the car travels across the map. The camera is static."
+  },
+  "turn2c_fallback": []
+ },
+ "soccer_tool": {
+  "csv": "datasets/examples/human-object-interaction/_soccer_tool_obj1_prompt1.csv",
+  "prompts": {
+   "ball": [
+    [
+     477,
+     244
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "ball",
+   "angle": 90,
+   "force": 200,
+   "caption": "The soccer ball is kicked upward and rolls up the field. The camera is static."
+  },
+  "turn2b": {
+   "target": "ball",
+   "angle": "toward:center",
+   "force": 100,
+   "caption": "The player's foot kicks the soccer ball again and it rolls across the field. The camera is static."
+  },
+  "turn2b_fallback": [],
+  "turn2c": {
+   "projectile": "ball",
+   "target": "ball",
+   "angle": "toward:center",
+   "force": 100,
+   "caption": "The player's foot kicks the soccer ball again, and it rolls across the field. The camera is static."
+  },
+  "turn2c_fallback": []
+ },
+ "paw_tool2": {
+  "csv": "datasets/examples/animal-object-interaction/_paw_tool2_obj1_prompt1.csv",
+  "prompts": {
+   "ball": [
+    [
+     538,
+     378
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "ball",
+   "angle": 0,
+   "force": 200,
+   "caption": "The dog nudges the blue ball back to the right with its paw. The camera is static."
+  },
+  "turn2b": {
+   "target": "ball",
+   "angle": "toward:center",
+   "force": 100,
+   "caption": "The dog nudges the blue ball again with its paw. The camera is static."
+  },
+  "turn2b_fallback": [],
+  "turn2c": {
+   "projectile": "ball",
+   "target": "ball",
+   "angle": "toward:center",
+   "force": 100,
+   "caption": "A dog nudges the blue ball again with its paw, causing it to roll on the ground. The camera is static."
+  },
+  "turn2c_fallback": []
+ },
+ "paw_tool3": {
+  "csv": "datasets/examples/animal-object-interaction/_paw_tool3_obj1_prompt1.csv",
+  "prompts": {
+   "ball": [
+    [
+     482,
+     258
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "ball",
+   "angle": 180,
+   "force": 200,
+   "caption": "The red ball rolls further to the left across the grass. The camera is static."
+  },
+  "turn2b": {
+   "target": "ball",
+   "angle": "toward:center",
+   "force": 100,
+   "caption": "The cat's paw reaches out and nudges the red ball again. The camera is static."
+  },
+  "turn2b_fallback": [],
+  "turn2c": {
+   "projectile": "ball",
+   "target": "ball",
+   "angle": "toward:center",
+   "force": 100,
+   "caption": "A cat's paw reaches out and nudges the red ball again, causing it to roll across the grass. The camera is static."
+  },
+  "turn2c_fallback": []
+ },
+ "bulb_tool": {
+  "csv": "datasets/examples/human-object-interaction/_bulb_tool_obj1_prompt1.csv",
+  "prompts": {
+   "bulb_left": [
+    [
+     185,
+     400
+    ]
+   ],
+   "bulb_right": [
+    [
+     262,
+     390
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "bulb_right",
+   "angle": 180,
+   "force": 200,
+   "caption": "A hand pushes the right bulb, causing it to swing and hit the other bulb. The camera is static."
+  },
+  "turn2_fallback": [
+   {
+    "target": "bulb_left",
+    "angle": 0,
+    "caption": "A hand pushes the left bulb, causing it to swing and hit the other bulb. The camera is static."
+   }
+  ],
+  "turn2b": {
+   "target": "bulb_right",
+   "angle": 180,
+   "force": 200,
+   "caption": "A hand pushes the right bulb, causing it to swing and hit the other bulb. The camera is static."
+  },
+  "turn2b_fallback": [
+   {
+    "target": "bulb_left",
+    "angle": 0,
+    "caption": "A hand pushes the left bulb, causing it to swing and hit the other bulb. The camera is static."
+   }
+  ],
+  "turn2c": {
+   "projectile": "bulb_right",
+   "target": "bulb_left",
+   "angle": "away",
+   "force": 200,
+   "caption": "A hand pushes the right bulb, causing it to swing and hit the other bulb. The camera is static."
+  },
+  "turn2c_fallback": [
+   {
+    "projectile": "bulb_left",
+    "target": "bulb_right",
+    "angle": "away",
+    "caption": "A hand pushes the left bulb, causing it to swing and hit the other bulb. The camera is static."
+   }
+  ]
+ },
+ "ballthendominos": {
+  "csv": "datasets/examples/multi-object-collision/_ballthendominos_obj1_prompt1.csv",
+  "prompts": {
+   "white_ball": [
+    [
+     242,
+     380
+    ]
+   ],
+   "red_ball": [
+    [
+     358,
+     372
+    ]
+   ],
+   "domino1": [
+    [
+     424,
+     365
+    ],
+    [
+     424,
+     345
+    ]
+   ],
+   "domino2": [
+    [
+     462,
+     360
+    ],
+    [
+     462,
+     340
+    ]
+   ],
+   "domino3": [
+    [
+     500,
+     355
+    ],
+    [
+     500,
+     335
+    ]
+   ],
+   "domino4": [
+    [
+     539,
+     352
+    ],
+    [
+     539,
+     332
+    ]
+   ],
+   "domino_back": [
+    [
+     390,
+     258
+    ]
+   ]
+  },
+  "turn2": {
+   "target": "red_ball",
+   "angle": 180,
+   "force": 200,
+   "caption": "The red pool ball rolls back to the left and hits the white ball. The camera is static."
+  },
+  "turn2_fallback": [],
+  "turn2b": {
+   "target": "domino_back",
+   "angle": 0,
+   "force": 100,
+   "caption": "A standing domino in the back row is pushed to the right, and the dominoes next to it fall over one after another. The camera is static."
+  },
+  "turn2b_fallback": [],
+  "turn2c": {
+   "projectile": "domino_back",
+   "target": "domino_back",
+   "angle": 0,
+   "force": 100,
+   "caption": "A hand pushes a standing domino in the back row, and the dominoes next to it fall over one after another. The camera is static."
+  },
+  "turn2c_fallback": []
+ }
+}

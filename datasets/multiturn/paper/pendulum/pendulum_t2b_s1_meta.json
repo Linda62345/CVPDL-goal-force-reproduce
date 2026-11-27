@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper/pendulum/t1_s1/state.json",
+ "target": "bob",
+ "mode": "direct",
+ "point_topleft": [
+  319.3913790410745,
+  365.8867718257067
+ ],
+ "point_csv": [
+  319,
+  114
+ ],
+ "angle": 350.0,
+ "force": 150.0,
+ "caption": "The pendulum swings again and hits the fallen red block. The camera is static.",
+ "prev_turn": 1
+}

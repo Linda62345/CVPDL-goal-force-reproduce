@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/chain/paw_tool1/turn3/state.json",
+ "target": "white_bishop",
+ "mode": "direct",
+ "point_topleft": [
+  500.61337554412347,
+  360.22437673130196
+ ],
+ "point_csv": [
+  501,
+  120
+ ],
+ "angle": 68.0,
+ "force": 100.0,
+ "caption": "A light wooden chess piece slides across the board and knocks into another light piece. The camera is static.",
+ "prev_turn": 3
+}

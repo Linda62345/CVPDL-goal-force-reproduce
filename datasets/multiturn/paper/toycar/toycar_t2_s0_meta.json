@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper/toycar/t1_s0/state.json",
+ "target": "car",
+ "mode": "direct",
+ "point_topleft": [
+  128.66724533449067,
+  440.9232438464877
+ ],
+ "point_csv": [
+  129,
+  39
+ ],
+ "angle": 90.0,
+ "force": 200.0,
+ "caption": "The toy car drives upward across the map. The camera is static.",
+ "prev_turn": 1
+}

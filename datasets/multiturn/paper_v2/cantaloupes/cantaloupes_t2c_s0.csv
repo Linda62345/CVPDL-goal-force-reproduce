@@ -1,0 +1,2 @@
+image,projectile_force_angle,projectile_force_magnitude,projectile_coordx,projectile_coordy,projectile_mass,target_indirect_force_angle,target_indirect_force_magnitude,target_coordx,target_coordy,target_mass,width,height,caption
+cantaloupes_t2c_s0.png,-1.0,-1.0,799,125,-1,176.0,150.0,519,146,-1,832,480,"A cantaloupe rolls back across the surface, colliding with the other cantaloupe and pushing it away. The camera is static."

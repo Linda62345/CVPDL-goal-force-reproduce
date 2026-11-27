@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper/paw_tool1/t1_s1/state.json",
+ "target": "dark_bishop",
+ "mode": "direct",
+ "point_topleft": [
+  256.4001297016861,
+  244.5736057068742
+ ],
+ "point_csv": [
+  256,
+  235
+ ],
+ "angle": 163.0,
+ "force": 100.0,
+ "caption": "A dark chess piece slides across the board and knocks into another chess piece. The camera is static.",
+ "prev_turn": 1
+}

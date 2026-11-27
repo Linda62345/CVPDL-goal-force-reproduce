@@ -1,0 +1,22 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper_v2/pendulum/t1_s0/state.json",
+ "target": "red_block",
+ "mode": "goal",
+ "point_topleft": [
+  743.4375575547213,
+  427.914075228448
+ ],
+ "point_csv": [
+  743,
+  52
+ ],
+ "projectile": "bob",
+ "projectile_topleft": [
+  390.36207386363634,
+  370.7700284090909
+ ],
+ "angle": 351.0,
+ "force": 150.0,
+ "caption": "The pendulum swings again, striking the fallen red block and pushing it across the table. The camera is static.",
+ "prev_turn": 1
+}

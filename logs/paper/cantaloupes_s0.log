@@ -1,0 +1,227 @@
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/mediapipe_face/mediapipe_face_common.py:7: UserWarning: The module 'mediapipe' is not installed. The package will have limited functionality. Please install it using the command: pip install 'mediapipe'
+  warnings.warn(
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/segment_anything/modeling/tiny_vit_sam.py:654: UserWarning: Overwriting tiny_vit_5m_224 in registry with controlnet_aux.segment_anything.modeling.tiny_vit_sam.tiny_vit_5m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/segment_anything/modeling/tiny_vit_sam.py:654: UserWarning: Overwriting tiny_vit_11m_224 in registry with controlnet_aux.segment_anything.modeling.tiny_vit_sam.tiny_vit_11m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/segment_anything/modeling/tiny_vit_sam.py:654: UserWarning: Overwriting tiny_vit_21m_224 in registry with controlnet_aux.segment_anything.modeling.tiny_vit_sam.tiny_vit_21m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/segment_anything/modeling/tiny_vit_sam.py:654: UserWarning: Overwriting tiny_vit_21m_384 in registry with controlnet_aux.segment_anything.modeling.tiny_vit_sam.tiny_vit_21m_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/segment_anything/modeling/tiny_vit_sam.py:654: UserWarning: Overwriting tiny_vit_21m_512 in registry with controlnet_aux.segment_anything.modeling.tiny_vit_sam.tiny_vit_21m_512. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+[Device 0] Initialized inference:
+[Device 0]   - World size: 1
+[Device 0]   - Device: 0
+[Device 0]   - Seed: 0
+To avoid repeatedly downloading model files, (Wan-AI/Wan2.2-I2V-A14B, models_t5_umt5-xxl-enc-bf16.pth) is redirected to (Wan-AI/Wan2.1-T2V-1.3B, models_t5_umt5-xxl-enc-bf16.pth). You can use `redirect_common_files=False` to disable file redirection.
+To avoid repeatedly downloading model files, (Wan-AI/Wan2.2-I2V-A14B, Wan2.1_VAE.pth) is redirected to (Wan-AI/Wan2.1-T2V-1.3B, Wan2.1_VAE.pth). You can use `redirect_common_files=False` to disable file redirection.
+Loading models from: ['./models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors']
+    model_name: wan_video_dit model_class: WanModel
+        This model is initialized with extra kwargs: {'has_image_input': False, 'patch_size': [1, 2, 2], 'in_dim': 36, 'dim': 5120, 'ffn_dim': 13824, 'freq_dim': 256, 'text_dim': 4096, 'out_dim': 16, 'num_heads': 40, 'num_layers': 40, 'eps': 1e-06, 'require_clip_embedding': False}
+    The following models are loaded: ['wan_video_dit'].
+Loading models from: ['./models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors']
+    model_name: wan_video_dit model_class: WanModel
+        This model is initialized with extra kwargs: {'has_image_input': False, 'patch_size': [1, 2, 2], 'in_dim': 36, 'dim': 5120, 'ffn_dim': 13824, 'freq_dim': 256, 'text_dim': 4096, 'out_dim': 16, 'num_heads': 40, 'num_layers': 40, 'eps': 1e-06, 'require_clip_embedding': False}
+    The following models are loaded: ['wan_video_dit'].
+Loading models from: ./models/Wan-AI/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth
+    model_name: wan_video_text_encoder model_class: WanTextEncoder
+    The following models are loaded: ['wan_video_text_encoder'].
+Loading models from: ./models/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth
+    model_name: wan_video_vae model_class: WanVideoVAE
+    The following models are loaded: ['wan_video_vae'].
+Using wan_video_text_encoder from ./models/Wan-AI/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth.
+More than one wan_video_dit models are loaded in model manager: [['./models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors'], ['./models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors']]. Using wan_video_dit from [['./models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors'], ['./models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors']].
+Using wan_video_vae from ./models/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth.
+No wan_video_image_encoder models available.
+No wan_video_motion_controller models available.
+No wan_video_vace models available.
+No wans2v_audio_encoder models available.
+Enabling VRAM management for ControlNet.
+Enabling VRAM management for ControlNet2.
+[timing] model load: 25.8s
+
+
+[Device 0, seed 0] Processing 1 out of 1 examples. Processing:  ['datasets/examples/multi-object-collision/_cantaloupes_obj1_prompt1.csv']
+
+[job 1/1] seed=0 csv=datasets/examples/multi-object-collision/_cantaloupes_obj1_prompt1.csv start=16:40:41
+Doing csv:  datasets/examples/multi-object-collision/_cantaloupes_obj1_prompt1.csv
+WARNING: Hardcoding min/max mass and force values to match training dataset.
+
+currently working on fname_str:
+step-3000__cantaloupes__prj_coords_0.39_0.36__tgt_coords_0.71_0.34__prj_mass_-1.0__tgt_mass_3.5__prj_force_-1.0__prj_angle_-1.0__tgt_indirect_force_350.0__tgt_indirect_angle_0.0__seed_0
+
+Saving video:   0%|          | 0/81 [00:00<?, ?it/s]Saving video:   1%|          | 1/81 [00:01<01:27,  1.09s/it]Saving video:  88%|████████▊ | 71/81 [00:01<00:00, 82.00it/s]Saving video: 100%|██████████| 81/81 [00:01<00:00, 67.38it/s]
+VAE encoding:   0%|          | 0/9 [00:00<?, ?it/s]VAE encoding:  11%|█         | 1/9 [00:00<00:04,  1.90it/s]VAE encoding:  22%|██▏       | 2/9 [00:00<00:03,  2.10it/s]VAE encoding:  33%|███▎      | 3/9 [00:01<00:02,  2.18it/s]VAE encoding:  44%|████▍     | 4/9 [00:01<00:02,  2.21it/s]VAE encoding:  56%|█████▌    | 5/9 [00:02<00:01,  2.23it/s]VAE encoding:  67%|██████▋   | 6/9 [00:02<00:01,  2.25it/s]VAE encoding:  78%|███████▊  | 7/9 [00:03<00:00,  2.26it/s]VAE encoding:  89%|████████▉ | 8/9 [00:03<00:00,  2.26it/s]VAE encoding: 100%|██████████| 9/9 [00:04<00:00,  2.26it/s]VAE encoding: 100%|██████████| 9/9 [00:04<00:00,  2.22it/s]
+VAE encoding:   0%|          | 0/9 [00:00<?, ?it/s]VAE encoding:  11%|█         | 1/9 [00:00<00:03,  2.27it/s]VAE encoding:  22%|██▏       | 2/9 [00:00<00:03,  2.27it/s]VAE encoding:  33%|███▎      | 3/9 [00:01<00:02,  2.27it/s]VAE encoding:  44%|████▍     | 4/9 [00:01<00:02,  2.27it/s]VAE encoding:  56%|█████▌    | 5/9 [00:02<00:01,  2.27it/s]VAE encoding:  67%|██████▋   | 6/9 [00:02<00:01,  2.27it/s]VAE encoding:  78%|███████▊  | 7/9 [00:03<00:00,  2.27it/s]VAE encoding:  89%|████████▉ | 8/9 [00:03<00:00,  2.27it/s]VAE encoding: 100%|██████████| 9/9 [00:03<00:00,  2.27it/s]VAE encoding: 100%|██████████| 9/9 [00:03<00:00,  2.27it/s]
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:26<21:23, 26.19s/it]  4%|▍         | 2/50 [00:51<20:38, 25.80s/it]  6%|▌         | 3/50 [01:17<20:06, 25.68s/it]  8%|▊         | 4/50 [01:42<19:38, 25.63s/it] 10%|█         | 5/50 [02:08<19:11, 25.59s/it] 12%|█▏        | 6/50 [02:33<18:45, 25.57s/it] 14%|█▍        | 7/50 [02:59<18:18, 25.56s/it] 16%|█▌        | 8/50 [03:24<17:52, 25.55s/it] 18%|█▊        | 9/50 [03:50<17:26, 25.53s/it] 20%|██        | 10/50 [04:15<17:00, 25.52s/it] 22%|██▏       | 11/50 [04:41<16:35, 25.53s/it] 24%|██▍       | 12/50 [05:06<16:09, 25.52s/it] 26%|██▌       | 13/50 [05:32<15:44, 25.53s/it] 28%|██▊       | 14/50 [05:58<15:19, 25.53s/it] 30%|███       | 15/50 [06:23<14:53, 25.53s/it] 32%|███▏      | 16/50 [06:49<14:27, 25.53s/it] 34%|███▍      | 17/50 [07:14<14:02, 25.53s/it] 36%|███▌      | 18/50 [07:40<13:37, 25.53s/it] 38%|███▊      | 19/50 [08:05<13:11, 25.54s/it] 40%|████      | 20/50 [08:31<12:46, 25.54s/it] 42%|████▏     | 21/50 [08:56<12:20, 25.53s/it]--> Computation is at switch_DiT_boundary, so we loaded dit2 and controlnet2. <--
+ 44%|████▍     | 22/50 [09:24<12:13, 26.18s/it] 46%|████▌     | 23/50 [09:50<11:41, 25.99s/it] 48%|████▊     | 24/50 [10:15<11:12, 25.86s/it] 50%|█████     | 25/50 [10:41<10:44, 25.76s/it] 52%|█████▏    | 26/50 [11:06<10:16, 25.70s/it] 54%|█████▍    | 27/50 [11:32<09:49, 25.65s/it] 56%|█████▌    | 28/50 [11:57<09:23, 25.62s/it] 58%|█████▊    | 29/50 [12:23<08:57, 25.59s/it] 60%|██████    | 30/50 [12:48<08:31, 25.58s/it] 62%|██████▏   | 31/50 [13:14<08:05, 25.56s/it] 64%|██████▍   | 32/50 [13:39<07:40, 25.56s/it] 66%|██████▌   | 33/50 [14:05<07:14, 25.55s/it] 68%|██████▊   | 34/50 [14:30<06:48, 25.55s/it] 70%|███████   | 35/50 [14:56<06:23, 25.55s/it] 72%|███████▏  | 36/50 [15:22<05:57, 25.54s/it] 74%|███████▍  | 37/50 [15:47<05:32, 25.55s/it] 76%|███████▌  | 38/50 [16:13<05:06, 25.55s/it] 78%|███████▊  | 39/50 [16:38<04:41, 25.55s/it] 80%|████████  | 40/50 [17:04<04:15, 25.55s/it] 82%|████████▏ | 41/50 [17:29<03:49, 25.55s/it] 84%|████████▍ | 42/50 [17:55<03:24, 25.54s/it] 86%|████████▌ | 43/50 [18:20<02:58, 25.54s/it] 88%|████████▊ | 44/50 [18:46<02:33, 25.54s/it] 90%|█████████ | 45/50 [19:11<02:07, 25.54s/it] 92%|█████████▏| 46/50 [19:37<01:42, 25.54s/it] 94%|█████████▍| 47/50 [20:03<01:16, 25.55s/it] 96%|█████████▌| 48/50 [20:28<00:51, 25.54s/it] 98%|█████████▊| 49/50 [20:54<00:25, 25.54s/it]100%|██████████| 50/50 [21:19<00:00, 25.54s/it]100%|██████████| 50/50 [21:19<00:00, 25.59s/it]
+VAE decoding:   0%|          | 0/9 [00:00<?, ?it/s]VAE decoding:  11%|█         | 1/9 [00:00<00:06,  1.15it/s]VAE decoding:  22%|██▏       | 2/9 [00:01<00:05,  1.24it/s]VAE decoding:  33%|███▎      | 3/9 [00:02<00:04,  1.27it/s]VAE decoding:  44%|████▍     | 4/9 [00:03<00:03,  1.28it/s]VAE decoding:  56%|█████▌    | 5/9 [00:03<00:03,  1.29it/s]VAE decoding:  67%|██████▋   | 6/9 [00:04<00:02,  1.30it/s]VAE decoding:  78%|███████▊  | 7/9 [00:05<00:01,  1.30it/s]VAE decoding:  89%|████████▉ | 8/9 [00:06<00:00,  1.30it/s]VAE decoding: 100%|██████████| 9/9 [00:06<00:00,  1.31it/s]VAE decoding: 100%|██████████| 9/9 [00:06<00:00,  1.29it/s]
+Saving video:   0%|          | 0/81 [00:00<?, ?it/s]Saving video:   1%|          | 1/81 [00:00<01:18,  1.02it/s]Saving video: 100%|██████████| 81/81 [00:01<00:00, 77.47it/s]
+Saving video:   0%|          | 0/81 [00:00<?, ?it/s]Saving video:   1%|          | 1/81 [00:00<01:15,  1.06it/s]Saving video: 100%|██████████| 81/81 [00:01<00:00, 80.66it/s]
+[timing] job 1/1 done in 1308.7s -> outputs/multiturn/paper/cantaloupes/t1_gf/step-3000__cantaloupes__prj_coords_0.39_0.36__tgt_coords_0.71_0.34__prj_mass_-1.0__tgt_mass_3.5__prj_force_-1.0__prj_angle_-1.0__tgt_indirect_force_350.0__tgt_indirect_angle_0.0__seed_0.mp4
+[transformers] `memory_attention_rope_theta` is deprecated and will be removed in v5.0. Use `rope_parameters['rope_theta']` instead.
+Loading weights:   0%|          | 0/901 [00:00<?, ?it/s]Loading weights: 100%|██████████| 901/901 [00:00<00:00, 22712.38it/s]
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 19992.51it/s]
+melon_left   vis  81/81  last n/a         area x1.21  R-DINO last 0.63
+melon_right  vis  81/81  last n/a         area x0.74  R-DINO last 0.78
+board        vis  81/81  last as_initial  area x1.29  R-DINO last 0.29
+turn-2 choice: melon_right angle 180 (outputs/multiturn/paper/cantaloupes/t1_s0/t2_choice.json)
+wrote datasets/multiturn/paper/cantaloupes/cantaloupes_t2_s0.csv  point(top-left)=(809,354) -> csv y=126
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/mediapipe_face/mediapipe_face_common.py:7: UserWarning: The module 'mediapipe' is not installed. The package will have limited functionality. Please install it using the command: pip install 'mediapipe'
+  warnings.warn(
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/segment_anything/modeling/tiny_vit_sam.py:654: UserWarning: Overwriting tiny_vit_5m_224 in registry with controlnet_aux.segment_anything.modeling.tiny_vit_sam.tiny_vit_5m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/segment_anything/modeling/tiny_vit_sam.py:654: UserWarning: Overwriting tiny_vit_11m_224 in registry with controlnet_aux.segment_anything.modeling.tiny_vit_sam.tiny_vit_11m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/segment_anything/modeling/tiny_vit_sam.py:654: UserWarning: Overwriting tiny_vit_21m_224 in registry with controlnet_aux.segment_anything.modeling.tiny_vit_sam.tiny_vit_21m_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/segment_anything/modeling/tiny_vit_sam.py:654: UserWarning: Overwriting tiny_vit_21m_384 in registry with controlnet_aux.segment_anything.modeling.tiny_vit_sam.tiny_vit_21m_384. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/controlnet_aux/segment_anything/modeling/tiny_vit_sam.py:654: UserWarning: Overwriting tiny_vit_21m_512 in registry with controlnet_aux.segment_anything.modeling.tiny_vit_sam.tiny_vit_21m_512. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  return register_model(fn_wrapper)
+[Device 0] Initialized inference:
+[Device 0]   - World size: 1
+[Device 0]   - Device: 0
+[Device 0]   - Seed: 0
+To avoid repeatedly downloading model files, (Wan-AI/Wan2.2-I2V-A14B, models_t5_umt5-xxl-enc-bf16.pth) is redirected to (Wan-AI/Wan2.1-T2V-1.3B, models_t5_umt5-xxl-enc-bf16.pth). You can use `redirect_common_files=False` to disable file redirection.
+To avoid repeatedly downloading model files, (Wan-AI/Wan2.2-I2V-A14B, Wan2.1_VAE.pth) is redirected to (Wan-AI/Wan2.1-T2V-1.3B, Wan2.1_VAE.pth). You can use `redirect_common_files=False` to disable file redirection.
+Loading models from: ['./models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors']
+    model_name: wan_video_dit model_class: WanModel
+        This model is initialized with extra kwargs: {'has_image_input': False, 'patch_size': [1, 2, 2], 'in_dim': 36, 'dim': 5120, 'ffn_dim': 13824, 'freq_dim': 256, 'text_dim': 4096, 'out_dim': 16, 'num_heads': 40, 'num_layers': 40, 'eps': 1e-06, 'require_clip_embedding': False}
+    The following models are loaded: ['wan_video_dit'].
+Loading models from: ['./models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors']
+    model_name: wan_video_dit model_class: WanModel
+        This model is initialized with extra kwargs: {'has_image_input': False, 'patch_size': [1, 2, 2], 'in_dim': 36, 'dim': 5120, 'ffn_dim': 13824, 'freq_dim': 256, 'text_dim': 4096, 'out_dim': 16, 'num_heads': 40, 'num_layers': 40, 'eps': 1e-06, 'require_clip_embedding': False}
+    The following models are loaded: ['wan_video_dit'].
+Loading models from: ./models/Wan-AI/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth
+    model_name: wan_video_text_encoder model_class: WanTextEncoder
+    The following models are loaded: ['wan_video_text_encoder'].
+Loading models from: ./models/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth
+    model_name: wan_video_vae model_class: WanVideoVAE
+    The following models are loaded: ['wan_video_vae'].
+Using wan_video_text_encoder from ./models/Wan-AI/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth.
+More than one wan_video_dit models are loaded in model manager: [['./models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors'], ['./models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors']]. Using wan_video_dit from [['./models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/high_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors'], ['./models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors', './models/Wan-AI/Wan2.2-I2V-A14B/low_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors']].
+Using wan_video_vae from ./models/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth.
+No wan_video_image_encoder models available.
+No wan_video_motion_controller models available.
+No wan_video_vace models available.
+No wans2v_audio_encoder models available.
+Enabling VRAM management for ControlNet.
+Enabling VRAM management for ControlNet2.
+[timing] model load: 41.8s
+
+
+[Device 0, seed 0] Processing 1 out of 1 examples. Processing:  ['datasets/multiturn/paper/cantaloupes/cantaloupes_t2_s0.csv']
+
+[job 1/1] seed=0 csv=datasets/multiturn/paper/cantaloupes/cantaloupes_t2_s0.csv start=17:03:29
+Doing csv:  datasets/multiturn/paper/cantaloupes/cantaloupes_t2_s0.csv
+WARNING: Hardcoding min/max mass and force values to match training dataset.
+
+currently working on fname_str:
+step-3000_cantaloupes_t2_s0__prj_coords_0.97_0.26__tgt_coords_0.97_0.26__prj_mass_-1.0__tgt_mass_-1.0__prj_force_200.0__prj_angle_180.0__tgt_indirect_force_-1.0__tgt_indirect_angle_-1.0__seed_0
+
+Saving video:   0%|          | 0/81 [00:00<?, ?it/s]Saving video:   1%|          | 1/81 [00:01<01:28,  1.11s/it]Saving video:  89%|████████▉ | 72/81 [00:01<00:00, 81.82it/s]Saving video: 100%|██████████| 81/81 [00:01<00:00, 66.29it/s]
+VAE encoding:   0%|          | 0/9 [00:00<?, ?it/s]VAE encoding:  11%|█         | 1/9 [00:00<00:04,  1.87it/s]VAE encoding:  22%|██▏       | 2/9 [00:00<00:03,  2.09it/s]VAE encoding:  33%|███▎      | 3/9 [00:01<00:02,  2.17it/s]VAE encoding:  44%|████▍     | 4/9 [00:01<00:02,  2.21it/s]VAE encoding:  56%|█████▌    | 5/9 [00:02<00:01,  2.23it/s]VAE encoding:  67%|██████▋   | 6/9 [00:02<00:01,  2.25it/s]VAE encoding:  78%|███████▊  | 7/9 [00:03<00:00,  2.26it/s]VAE encoding:  89%|████████▉ | 8/9 [00:03<00:00,  2.26it/s]VAE encoding: 100%|██████████| 9/9 [00:04<00:00,  2.27it/s]VAE encoding: 100%|██████████| 9/9 [00:04<00:00,  2.22it/s]
+VAE encoding:   0%|          | 0/9 [00:00<?, ?it/s]VAE encoding:  11%|█         | 1/9 [00:00<00:03,  2.27it/s]VAE encoding:  22%|██▏       | 2/9 [00:00<00:03,  2.27it/s]VAE encoding:  33%|███▎      | 3/9 [00:01<00:02,  2.27it/s]VAE encoding:  44%|████▍     | 4/9 [00:01<00:02,  2.27it/s]VAE encoding:  56%|█████▌    | 5/9 [00:02<00:01,  2.27it/s]VAE encoding:  67%|██████▋   | 6/9 [00:02<00:01,  2.27it/s]VAE encoding:  78%|███████▊  | 7/9 [00:03<00:00,  2.27it/s]VAE encoding:  89%|████████▉ | 8/9 [00:03<00:00,  2.27it/s]VAE encoding: 100%|██████████| 9/9 [00:03<00:00,  2.27it/s]VAE encoding: 100%|██████████| 9/9 [00:03<00:00,  2.27it/s]
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:26<21:24, 26.21s/it]  4%|▍         | 2/50 [00:51<20:38, 25.80s/it]  6%|▌         | 3/50 [01:17<20:06, 25.68s/it]  8%|▊         | 4/50 [01:42<19:38, 25.62s/it] 10%|█         | 5/50 [02:08<19:11, 25.59s/it] 12%|█▏        | 6/50 [02:33<18:45, 25.57s/it] 14%|█▍        | 7/50 [02:59<18:19, 25.56s/it] 16%|█▌        | 8/50 [03:24<17:52, 25.55s/it] 18%|█▊        | 9/50 [03:50<17:27, 25.54s/it] 20%|██        | 10/50 [04:15<17:01, 25.54s/it] 22%|██▏       | 11/50 [04:41<16:35, 25.53s/it] 24%|██▍       | 12/50 [05:07<16:10, 25.53s/it] 26%|██▌       | 13/50 [05:32<15:44, 25.53s/it] 28%|██▊       | 14/50 [05:58<15:19, 25.53s/it] 30%|███       | 15/50 [06:23<14:53, 25.53s/it] 32%|███▏      | 16/50 [06:49<14:28, 25.53s/it] 34%|███▍      | 17/50 [07:14<14:02, 25.53s/it] 36%|███▌      | 18/50 [07:40<13:37, 25.53s/it] 38%|███▊      | 19/50 [08:05<13:11, 25.53s/it] 40%|████      | 20/50 [08:31<12:46, 25.53s/it] 42%|████▏     | 21/50 [08:56<12:20, 25.54s/it]--> Computation is at switch_DiT_boundary, so we loaded dit2 and controlnet2. <--
+ 44%|████▍     | 22/50 [09:24<12:13, 26.19s/it] 46%|████▌     | 23/50 [09:50<11:41, 25.99s/it] 48%|████▊     | 24/50 [10:15<11:12, 25.86s/it] 50%|█████     | 25/50 [10:41<10:44, 25.77s/it] 52%|█████▏    | 26/50 [11:06<10:16, 25.70s/it] 54%|█████▍    | 27/50 [11:32<09:50, 25.65s/it] 56%|█████▌    | 28/50 [11:57<09:23, 25.62s/it] 58%|█████▊    | 29/50 [12:23<08:57, 25.60s/it] 60%|██████    | 30/50 [12:48<08:31, 25.59s/it] 62%|██████▏   | 31/50 [13:14<08:05, 25.58s/it] 64%|██████▍   | 32/50 [13:40<07:40, 25.57s/it] 66%|██████▌   | 33/50 [14:05<07:14, 25.56s/it] 68%|██████▊   | 34/50 [14:31<06:48, 25.56s/it] 70%|███████   | 35/50 [14:56<06:23, 25.55s/it] 72%|███████▏  | 36/50 [15:22<05:57, 25.55s/it] 74%|███████▍  | 37/50 [15:47<05:32, 25.55s/it] 76%|███████▌  | 38/50 [16:13<05:06, 25.55s/it] 78%|███████▊  | 39/50 [16:38<04:41, 25.55s/it] 80%|████████  | 40/50 [17:04<04:15, 25.55s/it] 82%|████████▏ | 41/50 [17:29<03:49, 25.55s/it] 84%|████████▍ | 42/50 [17:55<03:24, 25.55s/it] 86%|████████▌ | 43/50 [18:21<02:58, 25.55s/it] 88%|████████▊ | 44/50 [18:46<02:33, 25.55s/it] 90%|█████████ | 45/50 [19:12<02:07, 25.55s/it] 92%|█████████▏| 46/50 [19:37<01:42, 25.55s/it] 94%|█████████▍| 47/50 [20:03<01:16, 25.55s/it] 96%|█████████▌| 48/50 [20:28<00:51, 25.55s/it] 98%|█████████▊| 49/50 [20:54<00:25, 25.55s/it]100%|██████████| 50/50 [21:19<00:00, 25.55s/it]100%|██████████| 50/50 [21:19<00:00, 25.60s/it]
+VAE decoding:   0%|          | 0/9 [00:00<?, ?it/s]VAE decoding:  11%|█         | 1/9 [00:00<00:06,  1.19it/s]VAE decoding:  22%|██▏       | 2/9 [00:01<00:05,  1.25it/s]VAE decoding:  33%|███▎      | 3/9 [00:02<00:04,  1.28it/s]VAE decoding:  44%|████▍     | 4/9 [00:03<00:03,  1.29it/s]VAE decoding:  56%|█████▌    | 5/9 [00:03<00:03,  1.29it/s]VAE decoding:  67%|██████▋   | 6/9 [00:04<00:02,  1.30it/s]VAE decoding:  78%|███████▊  | 7/9 [00:05<00:01,  1.30it/s]VAE decoding:  89%|████████▉ | 8/9 [00:06<00:00,  1.30it/s]VAE decoding: 100%|██████████| 9/9 [00:06<00:00,  1.31it/s]VAE decoding: 100%|██████████| 9/9 [00:06<00:00,  1.29it/s]
+Saving video:   0%|          | 0/81 [00:00<?, ?it/s]Saving video:   1%|          | 1/81 [00:01<01:20,  1.00s/it]Saving video: 100%|██████████| 81/81 [00:01<00:00, 76.89it/s]
+Saving video:   0%|          | 0/81 [00:00<?, ?it/s]Saving video:   1%|          | 1/81 [00:00<01:16,  1.04it/s]Saving video: 100%|██████████| 81/81 [00:01<00:00, 80.06it/s]
+[timing] job 1/1 done in 1309.1s -> outputs/multiturn/paper/cantaloupes/t2_gf/step-3000_cantaloupes_t2_s0__prj_coords_0.97_0.26__tgt_coords_0.97_0.26__prj_mass_-1.0__tgt_mass_-1.0__prj_force_200.0__prj_angle_180.0__tgt_indirect_force_-1.0__tgt_indirect_angle_-1.0__seed_0.mp4
+[transformers] `memory_attention_rope_theta` is deprecated and will be removed in v5.0. Use `rope_parameters['rope_theta']` instead.
+Loading weights:   0%|          | 0/901 [00:00<?, ?it/s]Loading weights: 100%|██████████| 901/901 [00:00<00:00, 21095.38it/s]
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 27408.13it/s]
+melon_left   vis  81/81  last n/a         area x1.20  R-DINO last 0.49
+melon_right  vis  81/81  last n/a         area x1.30  R-DINO last 0.41
+board        vis  81/81  last as_initial  area x1.23  R-DINO last 0.24
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 21830.04it/s]
+{
+ "n_objects": 3,
+ "state_kept_frac": 1.0,
+ "start_iou_mean": 0.9714485186884664,
+ "n_vanished": 0,
+ "n_fused": 0,
+ "n_reverted": 0,
+ "n_exited": 0,
+ "appearance_mem_end_mean": 0.3805139909187953,
+ "appearance_latest_end_mean": 0.7400479316711426,
+ "target_success": true,
+ "failure_labels": [
+  "appearance_deformed"
+ ]
+}
+melon_left     kept=True  lost=False rev=False startIoU=0.99 area_end=0.98 Rmem=0.48569822311401367 Rlat=0.79590904712677
+melon_right    kept=True  lost=False rev=False startIoU=0.99 area_end=1.76 Rmem=0.4130101799964905 Rlat=0.4838862419128418
+board          kept=True  lost=False rev=False startIoU=0.93 area_end=1.00 Rmem=0.24283356964588165 Rlat=0.9403485059738159
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/multiturn/memory_repair.py:79: RuntimeWarning: All-NaN slice encountered
+  plate = np.nanmedian(stack, axis=0)
+/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/venv/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+trust: {'melon_left': {'trusted_frames': 81, 'held_frames': 0}, 'melon_right': {'trusted_frames': 65, 'held_frames': 16}, 'board': {'trusted_frames': 81, 'held_frames': 0}}  edit px/frame: 23293
+Loading models from: ./models/Wan-AI/Wan2.1-VACE-1.3B/diffusion_pytorch_model.safetensors
+    model_name: wan_video_dit model_class: WanModel
+        This model is initialized with extra kwargs: {'has_image_input': False, 'patch_size': [1, 2, 2], 'in_dim': 16, 'dim': 1536, 'ffn_dim': 8960, 'freq_dim': 256, 'text_dim': 4096, 'out_dim': 16, 'num_heads': 12, 'num_layers': 30, 'eps': 1e-06}
+    model_name: wan_video_vace model_class: VaceWanModel
+        This model is initialized with extra kwargs: {}
+    The following models are loaded: ['wan_video_dit', 'wan_video_vace'].
+Loading models from: ./models/Wan-AI/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth
+    model_name: wan_video_text_encoder model_class: WanTextEncoder
+    The following models are loaded: ['wan_video_text_encoder'].
+Loading models from: ./models/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth
+    model_name: wan_video_vae model_class: WanVideoVAE
+    The following models are loaded: ['wan_video_vae'].
+Using wan_video_text_encoder from ./models/Wan-AI/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth.
+Using wan_video_dit from ./models/Wan-AI/Wan2.1-VACE-1.3B/diffusion_pytorch_model.safetensors.
+Using wan_video_vae from ./models/Wan-AI/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth.
+No wan_video_image_encoder models available.
+No wan_video_motion_controller models available.
+Using wan_video_vace from ./models/Wan-AI/Wan2.1-VACE-1.3B/diffusion_pytorch_model.safetensors.
+No wans2v_audio_encoder models available.
+LoRA tensors loaded: 900
+VAE encoding:   0%|          | 0/9 [00:00<?, ?it/s]VAE encoding:  11%|█         | 1/9 [00:00<00:04,  1.96it/s]VAE encoding:  22%|██▏       | 2/9 [00:00<00:03,  2.13it/s]VAE encoding:  33%|███▎      | 3/9 [00:01<00:02,  2.19it/s]VAE encoding:  44%|████▍     | 4/9 [00:01<00:02,  2.21it/s]VAE encoding:  56%|█████▌    | 5/9 [00:02<00:01,  2.23it/s]VAE encoding:  67%|██████▋   | 6/9 [00:02<00:01,  2.25it/s]VAE encoding:  78%|███████▊  | 7/9 [00:03<00:00,  2.25it/s]VAE encoding:  89%|████████▉ | 8/9 [00:03<00:00,  2.26it/s]VAE encoding: 100%|██████████| 9/9 [00:04<00:00,  2.26it/s]VAE encoding: 100%|██████████| 9/9 [00:04<00:00,  2.23it/s]
+VAE encoding:   0%|          | 0/9 [00:00<?, ?it/s]VAE encoding:  11%|█         | 1/9 [00:00<00:03,  2.27it/s]VAE encoding:  22%|██▏       | 2/9 [00:00<00:03,  2.27it/s]VAE encoding:  33%|███▎      | 3/9 [00:01<00:02,  2.27it/s]VAE encoding:  44%|████▍     | 4/9 [00:01<00:02,  2.27it/s]VAE encoding:  56%|█████▌    | 5/9 [00:02<00:01,  2.27it/s]VAE encoding:  67%|██████▋   | 6/9 [00:02<00:01,  2.27it/s]VAE encoding:  78%|███████▊  | 7/9 [00:03<00:00,  2.27it/s]VAE encoding:  89%|████████▉ | 8/9 [00:03<00:00,  2.27it/s]VAE encoding: 100%|██████████| 9/9 [00:03<00:00,  2.27it/s]VAE encoding: 100%|██████████| 9/9 [00:03<00:00,  2.27it/s]
+VAE encoding:   0%|          | 0/9 [00:00<?, ?it/s]VAE encoding: 100%|██████████| 9/9 [00:00<00:00, 126.34it/s]
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:05<04:06,  5.03s/it]  4%|▍         | 2/50 [00:10<04:16,  5.34s/it]  6%|▌         | 3/50 [00:16<04:15,  5.43s/it]  8%|▊         | 4/50 [00:21<04:12,  5.48s/it] 10%|█         | 5/50 [00:27<04:07,  5.51s/it] 12%|█▏        | 6/50 [00:32<04:03,  5.53s/it] 14%|█▍        | 7/50 [00:38<03:58,  5.54s/it] 16%|█▌        | 8/50 [00:43<03:52,  5.54s/it] 18%|█▊        | 9/50 [00:49<03:47,  5.54s/it] 20%|██        | 10/50 [00:55<03:41,  5.55s/it] 22%|██▏       | 11/50 [01:00<03:36,  5.55s/it] 24%|██▍       | 12/50 [01:06<03:31,  5.55s/it] 26%|██▌       | 13/50 [01:11<03:25,  5.56s/it] 28%|██▊       | 14/50 [01:17<03:20,  5.56s/it] 30%|███       | 15/50 [01:22<03:14,  5.56s/it] 32%|███▏      | 16/50 [01:28<03:09,  5.56s/it] 34%|███▍      | 17/50 [01:33<03:03,  5.56s/it] 36%|███▌      | 18/50 [01:39<02:57,  5.56s/it] 38%|███▊      | 19/50 [01:45<02:52,  5.56s/it] 40%|████      | 20/50 [01:50<02:46,  5.56s/it] 42%|████▏     | 21/50 [01:56<02:41,  5.56s/it] 44%|████▍     | 22/50 [02:01<02:35,  5.56s/it] 46%|████▌     | 23/50 [02:07<02:30,  5.56s/it] 48%|████▊     | 24/50 [02:12<02:24,  5.56s/it] 50%|█████     | 25/50 [02:18<02:18,  5.56s/it] 52%|█████▏    | 26/50 [02:23<02:13,  5.55s/it] 54%|█████▍    | 27/50 [02:29<02:07,  5.55s/it] 56%|█████▌    | 28/50 [02:35<02:02,  5.55s/it] 58%|█████▊    | 29/50 [02:40<01:56,  5.55s/it] 60%|██████    | 30/50 [02:46<01:51,  5.55s/it] 62%|██████▏   | 31/50 [02:51<01:45,  5.55s/it] 64%|██████▍   | 32/50 [02:57<01:39,  5.55s/it] 66%|██████▌   | 33/50 [03:02<01:34,  5.55s/it] 68%|██████▊   | 34/50 [03:08<01:28,  5.55s/it] 70%|███████   | 35/50 [03:13<01:23,  5.55s/it] 72%|███████▏  | 36/50 [03:19<01:17,  5.55s/it] 74%|███████▍  | 37/50 [03:25<01:12,  5.55s/it] 76%|███████▌  | 38/50 [03:30<01:06,  5.55s/it] 78%|███████▊  | 39/50 [03:36<01:01,  5.55s/it] 80%|████████  | 40/50 [03:41<00:55,  5.55s/it] 82%|████████▏ | 41/50 [03:47<00:49,  5.55s/it] 84%|████████▍ | 42/50 [03:52<00:44,  5.55s/it] 86%|████████▌ | 43/50 [03:58<00:38,  5.55s/it] 88%|████████▊ | 44/50 [04:03<00:33,  5.55s/it] 90%|█████████ | 45/50 [04:09<00:27,  5.55s/it] 92%|█████████▏| 46/50 [04:15<00:22,  5.55s/it] 94%|█████████▍| 47/50 [04:20<00:16,  5.55s/it] 96%|█████████▌| 48/50 [04:26<00:11,  5.55s/it] 98%|█████████▊| 49/50 [04:31<00:05,  5.55s/it]100%|██████████| 50/50 [04:37<00:00,  5.55s/it]100%|██████████| 50/50 [04:37<00:00,  5.54s/it]
+VAE decoding:   0%|          | 0/9 [00:00<?, ?it/s]VAE decoding:  11%|█         | 1/9 [00:00<00:06,  1.22it/s]VAE decoding:  22%|██▏       | 2/9 [00:01<00:05,  1.27it/s]VAE decoding:  33%|███▎      | 3/9 [00:02<00:04,  1.28it/s]VAE decoding:  44%|████▍     | 4/9 [00:03<00:03,  1.29it/s]VAE decoding:  56%|█████▌    | 5/9 [00:03<00:03,  1.30it/s]VAE decoding:  67%|██████▋   | 6/9 [00:04<00:02,  1.30it/s]VAE decoding:  78%|███████▊  | 7/9 [00:05<00:01,  1.30it/s]VAE decoding:  89%|████████▉ | 8/9 [00:06<00:00,  1.30it/s]VAE decoding: 100%|██████████| 9/9 [00:06<00:00,  1.30it/s]VAE decoding: 100%|██████████| 9/9 [00:06<00:00,  1.29it/s]
+Saving video:   0%|          | 0/81 [00:00<?, ?it/s]Saving video:   1%|          | 1/81 [00:00<00:08,  9.26it/s]Saving video: 100%|██████████| 81/81 [00:00<00:00, 413.79it/s]
+lora_orig done 294 s
+[transformers] `memory_attention_rope_theta` is deprecated and will be removed in v5.0. Use `rope_parameters['rope_theta']` instead.
+Loading weights:   0%|          | 0/901 [00:00<?, ?it/s]Loading weights: 100%|██████████| 901/901 [00:00<00:00, 21394.79it/s]
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 22973.74it/s]
+melon_left   vis  81/81  last n/a         area x1.19  R-DINO last 0.43
+melon_right  vis  81/81  last n/a         area x1.39  R-DINO last 0.46
+board        vis  81/81  last as_initial  area x1.22  R-DINO last 0.18
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 22593.60it/s]
+{
+ "n_objects": 3,
+ "state_kept_frac": 1.0,
+ "start_iou_mean": 0.9704614121339024,
+ "n_vanished": 0,
+ "n_fused": 0,
+ "n_reverted": 0,
+ "n_exited": 0,
+ "appearance_mem_end_mean": 0.3563269078731537,
+ "appearance_latest_end_mean": 0.5741448601086935,
+ "target_success": true,
+ "failure_labels": [
+  "appearance_deformed"
+ ]
+}
+melon_left     kept=True  lost=False rev=False startIoU=0.99 area_end=0.98 Rmem=0.432870090007782 Rlat=0.5828141570091248
+melon_right    kept=True  lost=False rev=False startIoU=0.98 area_end=1.90 Rmem=0.46087467670440674 Rlat=0.43314915895462036
+board          kept=True  lost=False rev=False startIoU=0.94 area_end=0.99 Rmem=0.17523595690727234 Rlat=0.7064712643623352
+wrote outputs/multiturn/paper/cantaloupes/repair/cantaloupes_s0/compare.jpg

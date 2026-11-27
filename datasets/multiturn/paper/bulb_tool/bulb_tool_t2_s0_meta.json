@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/paper/bulb_tool/t1_s0/state.json",
+ "target": "bulb_right",
+ "mode": "direct",
+ "point_topleft": [
+  158.2356613343738,
+  405.48380803745613
+ ],
+ "point_csv": [
+  158,
+  75
+ ],
+ "angle": 180.0,
+ "force": 200.0,
+ "caption": "A hand pushes the right bulb, causing it to swing and hit the other bulb. The camera is static.",
+ "prev_turn": 1
+}

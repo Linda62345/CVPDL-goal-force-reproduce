@@ -1,0 +1,2 @@
+image,projectile_force_angle,projectile_force_magnitude,projectile_coordx,projectile_coordy,projectile_mass,target_indirect_force_angle,target_indirect_force_magnitude,target_coordx,target_coordy,target_mass,width,height,caption
+cantaloupes_c4.png,1.0,150.0,94,110,-1,-1.0,-1.0,94,110,-1,832,480,The cantaloupe on the left rolls to the right and bumps into the other cantaloupe. The camera is static.

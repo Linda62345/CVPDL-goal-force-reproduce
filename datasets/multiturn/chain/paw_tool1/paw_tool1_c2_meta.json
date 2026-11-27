@@ -1,0 +1,17 @@
+{
+ "from_state": "/service/baeir0/linda623458/CVPDL/project/reproduce/goal-force/outputs/multiturn/chain/paw_tool1/turn1/state.json",
+ "target": "white_pawn_bottom",
+ "mode": "direct",
+ "point_topleft": [
+  306.38568773234203,
+  399.31412639405204
+ ],
+ "point_csv": [
+  306,
+  81
+ ],
+ "angle": 169.0,
+ "force": 100.0,
+ "caption": "A light wooden pawn slides across the board and knocks into a dark chess piece. The camera is static.",
+ "prev_turn": 1
+}

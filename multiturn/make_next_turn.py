@@ -35,6 +35,8 @@ def main():
     ap.add_argument("--name", required=True)
     ap.add_argument("--out_dir", required=True)
     ap.add_argument("--point", type=float, nargs=2, help="override force point (TOP-LEFT px)")
+    ap.add_argument("--projectile", help="goal mode: object that causes the motion (CSV projectile point = its centroid); "
+                    "default = same point as the target, i.e. an off-screen agent (hand / paw) as in the paper's tool examples")
     args = ap.parse_args()
 
     st = json.load(open(args.state))
@@ -53,8 +55,14 @@ def main():
     assert img.size == (W, H) == (832, 480), f"Goal Force expects 832x480, got {img.size}"
     img.save(out / "images" / f"{args.name}.png")
 
+    px, py_top = x, y_top
+    if args.projectile and args.projectile != args.target:
+        assert args.mode == "goal", "--projectile only applies to goal mode"
+        po = st["objects"][args.projectile]
+        assert po["last"]["visible"], f"{args.projectile} not visible in the last frame"
+        px, py_top = po["last"]["centroid"]
     if args.mode == "goal":
-        prj = [-1.0, -1.0, round(x), round(y_csv), -1]
+        prj = [-1.0, -1.0, round(px), round(H - py_top), -1]
         tgt = [args.angle, args.force, round(x), round(y_csv), -1]
     else:
         prj = [args.angle, args.force, round(x), round(y_csv), -1]
@@ -69,10 +77,14 @@ def main():
     ex, ey = x + L * math.cos(math.radians(args.angle)), y_top - L * math.sin(math.radians(args.angle))
     cv2.circle(prev, (round(x), round(y_top)), 10, col, 2)
     cv2.arrowedLine(prev, (round(x), round(y_top)), (round(ex), round(ey)), col, 2, tipLength=0.3)
+    if (px, py_top) != (x, y_top):  # goal mode with a separate projectile: blue circle + dashed-ish line to the target
+        cv2.circle(prev, (round(px), round(py_top)), 10, (0, 120, 255), 2)
+        cv2.line(prev, (round(px), round(py_top)), (round(x), round(y_top)), (0, 120, 255), 1)
     Image.fromarray(prev).save(out / f"{args.name}_preview.png")
 
     meta = {"from_state": str(Path(args.state).resolve()), "target": args.target, "mode": args.mode,
-            "point_topleft": [x, y_top], "point_csv": [round(x), round(y_csv)], "angle": args.angle,
+            "point_topleft": [x, y_top], "point_csv": [round(x), round(y_csv)],
+            "projectile": args.projectile or args.target, "projectile_topleft": [px, py_top], "angle": args.angle,
             "force": args.force, "caption": args.caption, "prev_turn": st["turn"]}
     json.dump(meta, open(out / f"{args.name}_meta.json", "w"), indent=1)
     print(f"wrote {out / (args.name + '.csv')}  point(top-left)=({x:.0f},{y_top:.0f}) -> csv y={y_csv:.0f}")
