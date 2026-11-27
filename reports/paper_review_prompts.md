@@ -160,6 +160,15 @@ seed 1：第 1 回合 = 原論文 CSV（力道 350）；第 2 回合 = 互撞／
 
 ### 今晚 seed 0（v2：第 1 回合鏡頭固定、力道 150）
 
+已產生的 CSV：
+
+| 回合 | 模式 | 施力點（CSV 座標，左下角原點） | 角度 | 力道 | 文字 prompt |
+|---|---|---|---|---|---|
+| _cantaloupes_v2 | goal | 擊球者 (326, 175) → 目標 (594, 163) | 0° | 150 | A cantaloupe rolls across the surface, colliding with another cantaloupe. The camera is static. |
+| cantaloupes_t2c_s0 | goal | 擊球者 (799, 125) → 目標 (519, 146) | 176° | 150 | A cantaloupe rolls back across the surface, colliding with the other cantaloupe and pushing it away. The camera is static. |
+| _pendulum_v2 | goal | 擊球者 (368, 108) → 目標 (545, 114) | 0° | 150 | The pendulum swings, striking and toppling the red block. The camera is static. |
+| pendulum_t2c_s0 | goal | 擊球者 (390, 109) → 目標 (743, 52) | 351° | 150 | The pendulum swings again, striking the fallen red block and pushing it across the table. The camera is static. |
+
 尚未跑到的場景，第 2 回合依 `multiturn/paper_scenes.json` 的 turn2b 設定；`toward:` 的實際角度要等第 1 回合追蹤完才算得出來：
 
 | 場景 | 第 1 回合 | 第 2 回合推誰 | 角度 | 力道 | 第 2 回合文字 prompt |
@@ -189,7 +198,7 @@ seed 1：第 1 回合 = 原論文 CSV（力道 350）；第 2 回合 = 互撞／
 | 4 | direct | (94, 110) | 1° | 150 | The cantaloupe on the left rolls to the right and bumps into the other cantaloupe. The camera is static. |
 | 5 | direct | (653, 79) | 181° | 150 | The cantaloupe on the right rolls to the left and bumps into the other cantaloupe. The camera is static. |
 
-### 西洋棋（狗） — `chain_paw_tool1.mp4`（進行中：已生成 3 回合）
+### 西洋棋（狗） — `chain_paw_tool1.mp4`
 
 | 回合 | 模式 | 施力點（CSV 座標，左下角原點） | 角度 | 力道 | 文字 prompt |
 |---|---|---|---|---|---|
@@ -197,3 +206,4 @@ seed 1：第 1 回合 = 原論文 CSV（力道 350）；第 2 回合 = 互撞／
 | 2 | direct | (306, 81) | 169° | 100 | A light wooden pawn slides across the board and knocks into a dark chess piece. The camera is static. |
 | 3 | direct | (207, 251) | 45° | 100 | A light wooden pawn slides across the board and knocks into a dark chess piece. The camera is static. |
 | 4 | direct | (501, 120) | 68° | 100 | A light wooden chess piece slides across the board and knocks into another light piece. The camera is static. |
+| 5 | direct | (408, 352) | 247° | 100 | A dark wooden chess piece slides across the board and knocks into a light wooden pawn. The camera is static. |
